@@ -1,0 +1,666 @@
+<!-- 
+Barbera
+-->
+<head>
+<title>Barbera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="phone.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        /*CSS Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bree Serif', serif;
+}
+body{
+    
+}
+/*CSS Variables*/
+:root{
+    --navbar-height: 59px;
+}
+
+/*Navigation Bar*/
+
+#navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+/*Navigation Bar : Logo and Image */
+
+#logo{
+    margin: 10px 10px;
+}
+
+#logo img{
+    height: 100px;
+    width: 100px;
+    margin: 5px 10px;
+}
+
+/*Navigation Bar :List Style*/
+#navbar{
+    position: fixed;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 40%;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    font-size: 1.1rem;
+}
+
+/*Section Home*/
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('https://as2.ftcdn.net/jpg/01/25/33/51/500_F_125335137_VVBbFvifaGeg2JH4aKCCvuJZBQ0yaCBv.jpg') no-repeat center center/cover; /*no-repeat center center/cover*/
+    height: 67%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 100px;
+    margin: 0px 100px;
+    flex-direction: column;
+    text-align: center;
+    height: 450px;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-top: 65px;
+}
+
+#home p{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*Section Offers*/
+
+.offers{
+    height: 570px;
+   /* border: 1px solid blue;*/
+}
+
+
+.offers h1{
+    margin-top: 20px;
+    font-size: 2rem;
+}
+#offer{
+    display: flex;
+    margin: 20px;
+    /*border: 2px solid red;*/
+}
+
+#offer .box{
+    display: block;
+    margin: auto;
+    width: 28%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white; 
+}
+
+#offer .box:hover{
+        box-shadow: 0px 0px 0px 3px lightgrey;
+}
+
+#offer .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+#offer p{
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+#offer .btn{
+    display: block;
+    align: center;
+    font-size: 0.9rem;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+#offer .btn:hover{
+    border: 1px solid black;
+}
+
+/*Section: Why Choose Us*/
+
+#choose::before{
+    content: "";
+    position: absolute;
+    background: url('https://previews.123rf.com/images/evgeniysalov/evgeniysalov1811/evgeniysalov181100083/112144325-barbershop-accessories-on-wooden-table-barbershop-background-copy-space-.jpg') no-repeat center center/cover;
+    z-index: -3;
+    opacity: 95%;
+    height: 600px;
+    width: 100%;
+}
+#choose{
+   /*border: 2px solid green;*/
+   background-color: #ffffff6b;
+}
+#chooseus{
+    display: flex;
+    /*border: 1px solid red;*/
+    margin: 20px;
+    align-content: center;
+    justify-content: center;
+}
+#chooseus .box{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    height: 100%;
+   /*border: 10px solid green;*/
+   background-color: none; 
+    
+}
+/*
+#chooseus .box:hover{
+        box-shadow: 0px 0px 0px 3px lightgrey;
+}
+*/
+#chooseus .box img{
+    display: block;
+    margin: auto;
+    width: 170px;
+    height: 100px;
+    padding: 20px;
+    /*border: 1px solid green;*/
+}
+#choose #bag_img{
+    height: 100px;
+    width: 130px;
+    /*border: 1px solid red;*/
+}
+#chooseus p{
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+#chooseus h1{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+#choose .bigbtn{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width : 60%;
+    font-size: 1.1rem;
+    background-color: white;
+    border: 1px solid black;
+}
+/*Section: Satisfied Costumer reviews*/
+/*
+#cost-rev::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 90%;
+}
+*/
+#cost-rev{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    flex-direction: column;
+    /*border: 1px solid violet;*/
+}
+#cost-rev .bigbtn{
+    display: block;
+    margin: auto;
+    background: none;
+    border: 2.5px solid white;
+    color: white;
+    width: 70%;
+    font-size: 2rem;
+    text-shadow: 2px 2px grey;
+}
+#cost-rev .bigbtn:hover{
+    box-shadow: 1px 1px 1px 1px grey;
+    background-color: #ffffff6b;
+}
+
+/*Services*/
+#services{
+    /*border: 2px solid brown;*/
+    background-color: white;
+    height: 650px;
+}
+#ser{
+    /*border: 2px solid cyan;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /*background-color: grey;*/
+}
+#services h1{
+    margin-top: 20px;
+}
+#ser .box{
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid black;*/
+    margin: 30px;
+    padding: 30px;
+}
+#ser .box img{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+}
+#ser .medbtn{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+#ser .medbtn:hover{
+    box-shadow: 1px 1px 1px 1px #8080801a;
+    background-color: #8080801a;
+    font-size: 32px;
+}
+/* Section: App*/
+#app{
+    display: flex;
+    border: 1px solid red;
+}
+#app::before{
+    content: "";
+    position: absolute;
+    background: url('https://thumbs.dreamstime.com/b/tools-hair-styling-white-background-top-view-101761583.jpg') no-repeat center center/cover ;
+    width: 100%;
+    height: 470px;
+    opacity: 90%;
+    z-index: -1;
+}
+#app .box{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+ /*   border: 1px solid blue;*/
+}
+#app .photo_btn{
+    display: inline-block;
+    width: 35%;
+    margin: 50px;
+    height: 100px;
+    background-color: black;
+    border-radius: 10px;
+}
+#app .photo_btn:hover{
+    border: 2px solid black;
+    opacity: 90%;
+}
+#google_store{
+    background: url('https://www.pxpng.com/public/uploads/small/11602614144t9qls8iimbyj15j6ftg06h2geuzh2v8tznfoubfyexjmpreds71hmfzjinqkmewm2f3hxwpaiiibmgmjqpldis7ex9edqxfpjmwz.png') no-repeat center center/cover;
+}
+#apple_store{
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Available_on_the_App_Store_%28black%29.png/640px-Available_on_the_App_Store_%28black%29.png') no-repeat center center/cover;
+}
+
+
+/*Section: Footer*/
+#foot{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#foot .box{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 10px;
+    /*border: 2px solid red;*/
+}
+/*Phone and Tablet*/
+
+#foot .box ul{
+    text-decoration: none;
+}
+#foot .box ul li{
+    list-style: none;
+}
+#foot .box a{
+    text-decoration: none;
+    color: white;
+}
+#foot .box a:hover{
+    color: grey;
+}
+
+#footer p{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+#foot .box h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+#foot .form_box{
+    display: flex;
+   /* border: 1px solid white;*/
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#foot .formde{
+    margin: 5px;
+    padding: 1px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+#foot .submit_btn{
+    display: block;
+    margin: auto;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+}
+#foot .submit_btn:hover{
+    color: white;
+    background-color: lightgrey; 
+}
+/*Utility Classes*/
+
+.head-pri{
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn{
+    padding: 15px 15px;
+    margin: 10px;
+    border: 2px white;
+    font-size: 1.5rem;
+    background-color: #80808052;
+    border-radius: 7px;
+}
+.btn:hover{
+    background-color: grey;
+    color: white;
+}
+.head-sec{
+    font-size: 2rem;
+    padding: 10px;
+}
+/*Phone and Tablet*/
+@media only screen and (max-width:1050px)
+{
+    #foot .box{
+        margin: 20px;
+    }
+    #foot{
+        flex-direction: column;
+    }
+    #foot .box{
+        flex-direction: column;
+        margin: 5px;
+        font-size: 1.7rem;
+    }
+    #foot .box ul{
+        display: flex;
+        flex-direction: row;
+    }
+    #foot .box li{
+        margin: 5px;
+        padding: 1px;
+    }
+    #foot .box h1{
+        display: block;
+        width: 100%;
+    }
+    #foot .submit_btn{
+    font-size: 2.2rem;
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+    }
+    #foot .formde{
+        font-size: 2.2rem;
+    }
+    .offers{
+        height: 610px;
+    }
+    #offer h1{
+        font-size: 2.5rem;
+    }
+    #offer .btn{
+        font-size: 1.3rem;
+    }
+}
+    </style>
+    
+</head>    
+<html>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://i.im.ge/2021/07/10/O8xux.png" alt="Barbera" width="150px">
+        </div>
+        <ul>
+            <li class="item"><a href="#">HOME</a></li>
+            <li class="item"><a href="#">BOOK APPOINTMENT</a></li>
+            <li class="item"><a href="#">SERVICES</a></li>
+            <li class="item"><a href="#">SIGN IN/ REGISTER</a></li>
+            <li class="item"><a href="#">TIPS</a></li>
+            <li class="item"><a href="#">REGISTER AS A PROFFESIONAL</a></li>
+            <li class="item"><a href="#">RATE US</a></li>
+            <li class="item"><a href="#">ABOUT US</a></li>
+            <li class="item"><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h1 class="head-pri">Welcome to BARBERA</h1>
+        <p>Get Stylish - Anytime - Anywhere</p>
+        <p>Beauty, Cosmetic & Personal Care.
+           Get Salon Services at home by expert professionals!</p>
+        <button class="btn">BOOK APPOINTMENT</button>
+    </section>
+    
+    <section class="offers">
+        <h1 class="head-pri" width="100%" align="center">OFFERS FOR YOU</h1>
+        <div id="offer">
+            <div class="box">
+                <img src="https://us.123rf.com/450wm/kakigori/kakigori1605/kakigori160500012/56673409-beautiful-young-bride-and-groom-couple-holding-hands-on-wedding-day.jpg?ver=6" alt="">
+                <h1 class="head-sec" align="center">30% Discount</h1>
+                <p align="center">Earn upto 30% Discount on Wedding Packages.</p>
+                <p align="center">*T&C Apply</p>
+                <button class="btn" >FIND MORE</button>
+            </div>
+            <div class="box">
+                <img src="https://static.vecteezy.com/system/resources/previews/002/644/884/original/golden-coins-stack-with-coin-in-front-of-it-flat-illustration-isolated-on-white-background-gold-coins-in-cartoon-style-balance-profit-income-statement-and-cash-vector.jpg">
+                <h1 class="head-sec" align="center">Earn Barbera Points</h1>
+                <p align="center">Groom youself and earn upto 100 Barbera Points.</p>
+                <p align="center">*T&C Apply</p>
+                <button class="btn" >FIND MORE</button>
+            </div>
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2017/05/26/05/38/discount-2345221_960_720.png" alt="">
+                <h1 class="head-sec" align="center">Special Packages</h1>
+                <p align="center">Get upto 50% Discount on special packages.</p>
+                <p align="center">*T&C Apply</p>
+                <button class="btn" >FIND MORE</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="choose">
+        <h1 class="head-pri" width="100%" align="center">WHY BARBERA??</h1>
+        <div id="chooseus">
+            <div class="box">
+                <img src="https://www.pngitem.com/pimgs/m/557-5571703_cost-effective-png-transparent-png.png" alt="">
+                <h1 class="head-sec" align="center">Cost Effective</h1>
+                <p align="center">Best Quality Services at Cheapest prices. Grab the best deals.</p>
+            </div>
+            <div class="box">
+                <img src="https://smallbizclub.com/wp-content/uploads/2020/02/Highlight-Your-Business-Certifications-and-Expertise.jpg">
+                <h1 class="head-sec" align="center">Experts Only</h1>
+                <p align="center">Our professionals are well-trained and have on-job expertise.</p>
+            </div>
+            <div class="box">
+                <img id="bag_img" src="https://static.thenounproject.com/png/74733-200.png" alt="">
+                <h1 class="head-sec" align="center">Well-Equipped</h1>
+                <p align="center">We have everything needed to complete the work.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cost-rev">
+        <button class="bigbtn">SATISFIED COSTUMER REVIEWS</button>
+    </section>
+    
+    <section id="services">
+        <h1 class="head-pri">SERVICES</h1>
+        <div id="ser">
+        <div class="box">
+            <img src="https://2x1dks3q6aoj44bz1r1tr92f-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/A-Man-Getting-Beard-Trim-At-Barber-Shop-July-2017.jpg" alt="">
+            <button class="medbtn">MEN</button>
+        </div>
+        <div class="box">
+            <img src="https://img.freepik.com/free-photo/female-hairdresser-making-hairstyle-brunette-woman-beauty-salon_176420-4465.jpg?size=626&ext=jpg&ga=GA1.2.1728028159.1615593600" alt="">
+            <button class="medbtn">WOMEN</button>
+        </div>
+        </div>
+    </section>
+    
+    <section id="app">
+        <div class="box">
+        <h1 class="head-pri">BOOK FROM YOUR MOBILE</h1>
+        <h1 class="head-sec">Download our App from Google Play Store and Apple Play Store</h1>
+        <button class="photo_btn" id="google_store" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.barbera.barberaconsumerapp&hl=en_IN&gl=US';"></button>
+        <button class="photo_btn" id="apple_store"></button>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        
+        <div id="foot">
+            <div class="box">
+                <h1>Serving in:</h1>
+                <ul>
+                    <li>Jaipur</li><hr>
+                    <li>City 2</li><hr>
+                    <li>City 3</li><hr>
+                    <li>City 4</li><hr>
+                    <li>City 5</li><hr>
+                    <li>City 6</li><hr>
+                    <li>City 7</li><hr>
+                    <li>City 8</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h1>Social Media:</h1>
+                <ul>
+                    <li class="item"><a href="https://www.instagram.com/barbera_online_salon/">Instagram</a></li><hr>
+                    <li class="item"><a href="#">Facebook</a></li><hr>
+                    <li class="item"><a href="#">Gmail</a></li><hr>
+                    <li class="item"><a href="#">Twitter</a></li><hr>
+                    <li class="item"><a href="#">Youtube</a></li><hr>
+                    <li class="item"><a href="#">Linked In</a></li><hr>
+                    <li class="item"><a href="#">Gmail</a></li><hr>
+                    <li class="item"><a href="#">Pinterest</a></li>
+                </ul>
+            </div>    
+            <div class="box">
+                <h1><a href="#">Contact Us:</a></h1>
+                <ul>
+                    <li>Phone Number :</li>
+                    <li>7007222155</li>
+                    <hr>
+                    <li>Gmail :</li>
+                    <li>barbera@gmail.com</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h1>Any Suggestions or Queries...Just Drop a Message!!</h1>
+            <form class="form_box">
+                <input type="text" class="formde" id="fname" placeholder="Name*">
+                <input type="email" class="formde" id="femail" placeholder="E-mail*">
+                <textarea name="message" id="msg" rows="8" cols="40" class="formde" placeholder="Enter Your Message*"></textarea>
+                <button class="submit_btn" type="submit">SUBMIT NOW</button>
+            </form>
+            </div>
+        </div>
+         <p>&copy; Barbera 2021 </p>
+    </footer>
+</body>
+</html>
