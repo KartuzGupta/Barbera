@@ -3,8 +3,7 @@ Barbera
 -->
 <head>
 <title>Barbera</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width:600px)" href="phone.css">
+    <!--<link rel="stylesheet" href="style.css">-->
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
         /*CSS Reset*/
@@ -14,7 +13,8 @@ Barbera
     font-family: 'Bree Serif', serif;
 }
 body{
-    
+     background-color: #a3a3a347;
+   
 }
 /*CSS Variables*/
 :root{
@@ -24,10 +24,13 @@ body{
 /*Navigation Bar*/
 
 #navbar{
+    position: fixed;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100px;
+    z-index: 10;
 }
 
 /*Navigation Bar : Logo and Image */
@@ -43,9 +46,6 @@ body{
 }
 
 /*Navigation Bar :List Style*/
-#navbar{
-    position: fixed;
-}
 
 #navbar::before{
     content: "";
@@ -74,12 +74,12 @@ body{
     margin: auto;
     border-radius: 30px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #navbar ul li a:hover{
     color: black;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
 }
 
 /*Section Home*/
@@ -105,7 +105,7 @@ body{
 }
 
 #home h1{
-    color: black;
+    color: #554b4b;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 5px;
@@ -118,6 +118,7 @@ body{
     font-size: 2rem;
     padding: 10px;
     margin-bottom: 10px;
+    color: #614b4b;
 }
 
 /*Section Offers*/
@@ -131,6 +132,7 @@ body{
 .offers h1{
     margin-top: 20px;
     font-size: 2rem;
+    color: #554b4b;
 }
 #offer{
     display: flex;
@@ -161,6 +163,7 @@ body{
     text-align: center;
     padding: 5px;
     font-size: 1.5rem;
+    color: #614b4b;
 }
 #offer .btn{
     display: block;
@@ -234,7 +237,9 @@ body{
     display: block;
     text-align: center;
     font-size: 2rem;
-    
+}
+#choose .head-pri{
+    color: #2c0e0e; 
 }
 #choose .bigbtn{
     display: block;
@@ -281,13 +286,14 @@ body{
 }
 
 /*Services*/
+
 #services{
-    /*border: 2px solid brown;*/
+/*    border: 2px solid brown;*/
     background-color: white;
-    height: 650px;
+    height: 500px;
 }
 #ser{
-    /*border: 2px solid cyan;*/
+  /*  border: 2px solid cyan;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -296,61 +302,82 @@ body{
 }
 #services h1{
     margin-top: 20px;
+    color: #2c0e0e;
 }
 #ser .box{
+    
+    /*border: 2px solid black;*/
     display: flex;
     flex-direction: column;
-    /*border: 2px solid black;*/
-    margin: 30px;
-    padding: 30px;
+    margin: 10px 70px;
+    padding: 10px;
 }
+/*
 #ser .box img{
     display: block;
     margin: auto;
-    width: 400px;
-    height: 400px;
+    margin-right: 150px;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
 }
+*/
 #ser .medbtn{
     display: block;
     margin: auto;
     padding: 10px;
-    margin-top: 10px;
     color: black;
-    background-color: white;
-    border: 2px solid black;
-    font-size: 30px;
-    width: 100%;
+    font-size: 2rem;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
+    border: 1px white;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #8080801a;
 }
+#btn_male{
+    background : url('https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg') no-repeat center center/cover;
+}
+#btn_female{
+    background : url('https://cdn4.vectorstock.com/i/thumb-large/16/68/young-woman-avatar-icon-vector-13321668.jpg') no-repeat center center/cover;
+}
+
 #ser .medbtn:hover{
-    box-shadow: 1px 1px 1px 1px #8080801a;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px #8080801a;
     background-color: #8080801a;
-    font-size: 32px;
+    font-size: 2.1rem;
+    border: 1px white;
+    color: #2c0e0e;
 }
 /* Section: App*/
 #app{
     display: flex;
-    border: 1px solid red;
+    flex-direction: row-reverse;
+    /*border: 1px solid red;*/
 }
 #app::before{
     content: "";
     position: absolute;
     background: url('https://thumbs.dreamstime.com/b/tools-hair-styling-white-background-top-view-101761583.jpg') no-repeat center center/cover ;
     width: 100%;
-    height: 470px;
+    height: 550px;
     opacity: 90%;
     z-index: -1;
 }
 #app .box{
-    display: block;
+   /*border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     padding: 10px;
- /*   border: 1px solid blue;*/
+   justify-content: center;
+    align-content: center;
 }
 #app .photo_btn{
-    display: inline-block;
-    width: 35%;
-    margin: 50px;
+    display: block;
+    width: 330px;
+    margin: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
     height: 100px;
     background-color: black;
     border-radius: 10px;
@@ -366,7 +393,44 @@ body{
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Available_on_the_App_Store_%28black%29.png/640px-Available_on_the_App_Store_%28black%29.png') no-repeat center center/cover;
 }
 
+/*Moving Store*/
+#app .box_move{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    /*border: 2px solid grey;*/
+}
 
+.box_move img{
+    width: 250px;
+    height: 500px;
+    left: -500%;
+    /*border: 2px solid cyan;*/
+}
+#move_1{
+    position: relative;
+    animation-name: move_1;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes move_1{
+    0%   {left:-100%; top:0px;}
+    100% {left: 0px; top:0px;}
+}
+
+#move_2{
+    position: relative;
+    left: -1000px;
+    animation-name: move_1;
+    animation-duration: 4s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+@keyframes move_2{
+    0%   {left:-200%; top:0px;}
+    100% {left: 0px; top:0px;}
+}
 /*Section: Footer*/
 #foot{
     background-color: black;
@@ -452,6 +516,8 @@ body{
     font-size: 1.5rem;
     background-color: #80808052;
     border-radius: 7px;
+    color: #614b4b;
+    
 }
 .btn:hover{
     background-color: grey;
@@ -461,9 +527,10 @@ body{
     font-size: 2rem;
     padding: 10px;
 }
-/*Phone and Tablet*/
-@media only screen and (max-width:1050px)
-{
+
+/*Phone and Tablet max-width:1050px*/
+@media only screen and (max-width:1100px){
+    /*Footer*/
     #foot .box{
         margin: 20px;
     }
@@ -496,6 +563,7 @@ body{
     #foot .formde{
         font-size: 2.2rem;
     }
+    /*Offers*/
     .offers{
         height: 610px;
     }
@@ -505,24 +573,46 @@ body{
     #offer .btn{
         font-size: 1.3rem;
     }
+    
+    #app .photo_btn{
+    margin-left: 20%;
+    margin-right: 20%;
+    }
+    #app::before{
+        height: 600px;
+    }
+    #app .box_move{
+        justify-content: center;
+        align-content: center;
+    }
 }
+
+/*Phone and Tablet max-width:700px  , Navigation bar for smaller screens
+@media only screen and (max-width: 700px)
+{
+    body{
+        background-color: black;
+        z-index: 3;
+    }
+}*/
     </style>
     
 </head>    
 <html>
 <body>
+    
     <nav id="navbar">
         <div id="logo">
             <img src="https://i.im.ge/2021/07/10/O8xux.png" alt="Barbera" width="150px">
         </div>
         <ul>
             <li class="item"><a href="#">HOME</a></li>
-            <li class="item"><a href="#">BOOK APPOINTMENT</a></li>
+            <!--<li class="item"><a href="#">BOOK APPOINTMENT</a></li>-->
             <li class="item"><a href="#">SERVICES</a></li>
             <li class="item"><a href="#">SIGN IN/ REGISTER</a></li>
             <li class="item"><a href="#">TIPS</a></li>
-            <li class="item"><a href="#">REGISTER AS A PROFFESIONAL</a></li>
-            <li class="item"><a href="#">RATE US</a></li>
+            <!--<li class="item"><a href="#">REGISTER AS A PROFFESIONAL</a></li>-->
+            <!--<li class="item"><a href="#">RATE US</a></li>-->
             <li class="item"><a href="#">ABOUT US</a></li>
             <li class="item"><a href="#">CONTACT US</a></li>
         </ul>
@@ -592,12 +682,12 @@ body{
         <h1 class="head-pri">SERVICES</h1>
         <div id="ser">
         <div class="box">
-            <img src="https://2x1dks3q6aoj44bz1r1tr92f-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/A-Man-Getting-Beard-Trim-At-Barber-Shop-July-2017.jpg" alt="">
-            <button class="medbtn">MEN</button>
+            <!--<img src="https://www.pngitem.com/pimgs/m/132-1322518_man-hair-logo-png-transparent-png.png" alt="">-->
+            <button class="medbtn" id="btn_male">MEN</button>
         </div>
         <div class="box">
-            <img src="https://img.freepik.com/free-photo/female-hairdresser-making-hairstyle-brunette-woman-beauty-salon_176420-4465.jpg?size=626&ext=jpg&ga=GA1.2.1728028159.1615593600" alt="">
-            <button class="medbtn">WOMEN</button>
+            <!--<img src="https://img.freepik.com/free-photo/female-hairdresser-making-hairstyle-brunette-woman-beauty-salon_176420-4465.jpg?size=626&ext=jpg&ga=GA1.2.1728028159.1615593600" alt="">-->
+            <button class="medbtn" id="btn_female">WOMEN</button>
         </div>
         </div>
     </section>
@@ -605,14 +695,17 @@ body{
     <section id="app">
         <div class="box">
         <h1 class="head-pri">BOOK FROM YOUR MOBILE</h1>
-        <h1 class="head-sec">Download our App from Google Play Store and Apple Play Store</h1>
+        <h1 class="head-sec">Download our App from Google Play Store and Apple Store.</h1>
         <button class="photo_btn" id="google_store" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.barbera.barberaconsumerapp&hl=en_IN&gl=US';"></button>
         <button class="photo_btn" id="apple_store"></button>
+        </div>
+        <div class="box_move">
+            <img id="move_1" src="https://image.winudf.com/v2/image1/Y29tLmJhcmJlcmEuYmFyYmVyYWNvbnN1bWVyYXBwX3NjcmVlbl8xXzE2MDM1MTcyOTRfMDY0/screen-1.jpg?fakeurl=1&type=.jpg" alt="">
+            <img id="move_2" src="https://play-lh.googleusercontent.com/1E33qxK09D_kiqJwP51Zae0nXYiXViAJz1IUjXCqmyEjMj9ISDVlq3_s9TvkfEoaSEM=w1536-h696-rw" alt="">
         </div>
     </section>
     
     <footer id="footer">
-        
         <div id="foot">
             <div class="box">
                 <h1>Serving in:</h1>
