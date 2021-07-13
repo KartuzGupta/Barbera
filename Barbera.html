@@ -37,6 +37,7 @@ body{
 
 #logo{
     margin: 10px 10px;
+    background-color: #E8F0F2;
 }
 
 #logo img{
@@ -78,7 +79,7 @@ body{
 }
 
 #navbar ul li a:hover{
-    color: black;
+    color: #E8F0F2;
     font-size: 1.6rem;
 }
 
@@ -86,11 +87,11 @@ body{
 #home::before{
     content: "";
     position: absolute;
-    background: url('https://as2.ftcdn.net/jpg/01/25/33/51/500_F_125335137_VVBbFvifaGeg2JH4aKCCvuJZBQ0yaCBv.jpg') no-repeat center center/cover; /*no-repeat center center/cover*/
+    background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;
     height: 510px;
     width: 100%;
     z-index: -2;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 #home{
@@ -105,7 +106,7 @@ body{
 }
 
 #home h1{
-    color: #554b4b;
+    color: white;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 5px;
@@ -118,13 +119,21 @@ body{
     font-size: 2rem;
     padding: 10px;
     margin-bottom: 10px;
-    color: #614b4b;
+    color: white;
 }
-
+#home .btn{
+    opacity: 60%;
+    color: black;
+}
+#home .btn:hover{
+    color: white;
+    opacity: 80%;
+}
 /*Section Offers*/
 
 .offers{
-    height: 570px;
+    height: 600px;
+    background-color: #a3a3a347;
    /* border: 1px solid blue;*/
 }
 
@@ -132,25 +141,72 @@ body{
 .offers h1{
     margin-top: 20px;
     font-size: 2.3rem;
-    color: #554b4b;
+    color: #2B2B2B;
 }
 #offer{
+    /*border: 2px solid red;*/
     display: flex;
     margin: 20px;
-    /*border: 2px solid red;*/
+    justify-content: center;
+    align-content: center;
 }
-
+/*animation :Button Offers*/
+#offer .upper{
+    /*border: 2px solid red;*/
+    height: 450px;
+    width: 300px;
+    overflow: hidden;
+    margin: 25px;
+    background-color: none;
+}
 #offer .box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 900px;
+    border-radius: 15px;
+    background-color: none;
+    
+    /*border: 1px solid green;*/
+}
+#offer .btn{
+    display: block;
+    align: center;
+    font-size: 3rem;
+    padding: 5px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #423F3E;
+    width: 300px;
+    height: 450px;
+    color: white;
+    /*border: 2px solid black;*/
+}
+#offer .box:hover{
+    position: relative;
+    animation: button;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes button{
+    0%{top:-0px;}
+    100%{top: -450px;}
+}
+#offer .box1{
+    /*border: 2px solid black;*/
     display: block;
     margin: auto;
-    width: 28%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: white; 
+    height: 450px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #D6D2C4;
 }
-
-#offer .box:hover{
-        box-shadow: 0px 0px 0px 3px lightgrey;
+#offer .box2{
+    /*border: 2px solid cyan;*/
+    height: 450px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #D6D2C4;
 }
 
 #offer .box img{
@@ -165,34 +221,21 @@ body{
     font-size: 1.5rem;
     color: #614b4b;
 }
-#offer .btn{
-    display: block;
-    align: center;
-    font-size: 0.9rem;
-    padding: 5px;
-    margin: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    
-}
-#offer .btn:hover{
-    border: 1px solid black;
-}
 
 /*Section: Why Choose Us*/
 
 #choose::before{
     content: "";
     position: absolute;
-    background: url('https://previews.123rf.com/images/evgeniysalov/evgeniysalov1811/evgeniysalov181100083/112144325-barbershop-accessories-on-wooden-table-barbershop-background-copy-space-.jpg') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1585314062604-1a357de8b000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;
     z-index: -3;
-    opacity: 95%;
+    opacity: 90%;
     height: 600px;
     width: 100%;
 }
 #choose{
    /*border: 2px solid green;*/
-   background-color: #ffffff6b;
+   /*background-color: #ffffff6b;*/
 }
 #chooseus{
     display: flex;
@@ -225,21 +268,23 @@ body{
 }
 #choose #bag_img{
     height: 100px;
-    width: 130px;
+    width: 110px;
     /*border: 1px solid red;*/
 }
 #chooseus p{
     text-align: center;
     padding: 5px;
     font-size: 1.5rem;
+    color: wheat;
 }
 #chooseus h1{
     display: block;
     text-align: center;
     font-size: 2rem;
+    color: #E8F0F2;
 }
 #choose .head-pri{
-    color: #2c0e0e; 
+    color: #E8F0F2; 
 }
 #choose .bigbtn{
     display: block;
@@ -290,7 +335,7 @@ body{
 #services{
 /*    border: 2px solid brown;*/
     background-color: white;
-    height: 500px;
+    height: 890px;
 }
 #ser{
   /*  border: 2px solid cyan;*/
@@ -309,8 +354,29 @@ body{
     /*border: 2px solid black;*/
     display: flex;
     flex-direction: column;
-    margin: 10px 70px;
+    margin: 10px 10px;
     padding: 10px;
+}
+#ser .icon_bar{
+    display: flex;
+    flex-direction: row;
+}
+#ser .icon_btn{
+    width: 105px;
+    height: 105px;
+    font-size: 1rem; 
+    margin: 4px;
+    border: 1px grey;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+#ser .icon_btn:hover{
+    font-size: 1.1rem; 
+    box-shadow: 1px 1px 1px 1px  #8080801a;
+}
+#ser .main{
+    display: flex;
+    margin: 40px;
 }
 /*
 #ser .box img{
@@ -328,19 +394,22 @@ body{
     padding: 10px;
     color: black;
     font-size: 2rem;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
     border: 1px white;
     box-shadow: 1.5px 1.5px 1.5px 1.5px #8080801a;
 }
+/*Big Icon Photos*/
 #btn_male{
     background : url('https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg') no-repeat center center/cover;
 }
 #btn_female{
     background : url('https://cdn4.vectorstock.com/i/thumb-large/16/68/young-woman-avatar-icon-vector-13321668.jpg') no-repeat center center/cover;
 }
-
+#btn_wedding{
+    background: url('https://cdn3.vectorstock.com/i/1000x1000/20/27/wedding-ring-with-diamond-circle-icon-vector-7672027.jpg') no-repeat center center/cover;
+}
 #ser .medbtn:hover{
     box-shadow: 2.5px 2.5px 2.5px 2.5px #8080801a;
     background-color: #8080801a;
@@ -348,16 +417,81 @@ body{
     border: 1px white;
     color: #2c0e0e;
 }
+#ser .icon_text{
+    display: flex;
+    flex-direction: column;
+}
+#ser .icon_text p{
+    display: block;
+    margin: auto;
+}
+/*Small Icon Photos*/
+/*Mens*/
+#m_1{
+    background: url('https://cdn.icon-icons.com/icons2/1465/PNG/512/255mangettinghaircut2_100887.png') no-repeat center center/cover;
+}
+#m_2{
+    background: url('https://previews.123rf.com/images/kahovsky/kahovsky1803/kahovsky180300012/96989793-young-man-shaving-face-with-foam-vector-flat-cartoon-character-illustration-icon-design-isolated-on-.jpg') no-repeat center center/cover;
+}
+#m_3{
+    background: url('https://cdn1.iconfinder.com/data/icons/barber-services-in-line-style/32/man-hair-dyeing-512.png') no-repeat center center/cover;
+}
+#m_4{
+    background: url('https://thumbs.dreamstime.com/b/clear-man-face-flat-icon-skin-care-color-icons-trendy-style-open-pores-gradient-design-designed-web-app-eps-138947253.jpg') no-repeat center center/cover;
+}
+#m_5{
+    background: url('https://media.istockphoto.com/vectors/man-head-massage-concept-vector-illustration-on-white-background-vector-id1303812319?s=612x612') no-repeat center center/cover;
+}
+/*Female*/
+#fm_1{
+    background: url('https://creazilla-store.fra1.digitaloceanspaces.com/emojis/49570/woman-getting-haircut-emoji-clipart-md.png') no-repeat center center/cover;
+}
+#fm_2{
+    background: url('https://st3.depositphotos.com/4177785/32041/v/950/depositphotos_320410332-stock-illustration-natural-shampoo-bottle-color-icon.jpg') no-repeat center center/cover;
+}
+#fm_3{
+    background: url('https://www.crushpixel.com/big-static17/preview4/hair-colouring-rgb-color-icon-2547377.jpg') no-repeat center center/cover;
+}
+#fm_4{
+    background: url('https://media.istockphoto.com/vectors/eyebrow-shaping-with-thread-removing-excess-facial-hair-woman-face-vector-id1265155849') no-repeat center center/cover;
+}
+#fm_5{
+    background: url('https://previews.123rf.com/images/nikolaydzhi/nikolaydzhi1609/nikolaydzhi160900158/64777450-vector-illustration-of-a-beautiful-woman-with-facial-mask-care-suitable-for-spa-salons-isolated-on-a.jpg') no-repeat center center/cover;
+}
+#fm_6{
+    background: url('https://image.flaticon.com/icons/png/512/1005/1005772.png') no-repeat center center/cover;
+}
+#fm_7{
+    background: url('https://www.crushpixel.com/big-static16/preview4/mehndi-rgb-color-icon-2266514.jpg') no-repeat center center/cover;
+}
+#fm_8{
+    background: url('https://i.pinimg.com/236x/d9/ff/59/d9ff59ecbf3c3f55ddf610e22c6439ef--tips-belleza-facials.jpg') no-repeat center center/cover;
+}
+/*WEDDING*/
+#wed_1{
+    background: url('https://cdn2.vectorstock.com/i/thumb-large/08/51/indian-woman-in-traditional-national-dress-bride-vector-28290851.jpg') no-repeat center center/cover;
+}
+#wed_2{
+    background: url('https://thumbs.dreamstime.com/b/indian-man-traditional-national-dress-bridegroom-flat-color-line-icon-vector-symbol-sign-illustration-design-isolated-166230649.jpg') no-repeat center center/cover;
+}
+#wed_3{
+    background: url('https://www.crushpixel.com/big-static16/preview4/mehndi-rgb-color-icon-2266514.jpg') no-repeat center center/cover;
+}
+#wed_4{
+    background: url('https://www.crushpixel.com/big-static19/preview4/face-powder-blush-case-app-3722003.jpg') no-repeat center center/cover;
+}
+
 /* Section: App*/
 #app{
     display: flex;
     flex-direction: row-reverse;
+    height: 550px;
     /*border: 1px solid red;*/
 }
 #app::before{
     content: "";
     position: absolute;
-    background: url('https://thumbs.dreamstime.com/b/tools-hair-styling-white-background-top-view-101761583.jpg') no-repeat center center/cover ;
+    background: url('https://thumbs.dreamstime.com/b/hairdresser-tools-black-background-copy-space-center-123969265.jpg') no-repeat center center/cover ;
     width: 100%;
     height: 550px;
     opacity: 90%;
@@ -365,6 +499,7 @@ body{
 }
 #app .box{
    /*border: 1px solid blue;*/
+   color: white;
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -374,13 +509,13 @@ body{
 }
 #app .photo_btn{
     display: block;
-    width: 330px;
+    width: 180px;
     margin: 10px;
     margin-left: 30%;
     margin-right: 30%;
-    height: 100px;
+    height: 60px;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 #app .photo_btn:hover{
     border: 2px solid black;
@@ -388,6 +523,8 @@ body{
 }
 #google_store{
     background: url('https://www.pxpng.com/public/uploads/small/11602614144t9qls8iimbyj15j6ftg06h2geuzh2v8tznfoubfyexjmpreds71hmfzjinqkmewm2f3hxwpaiiibmgmjqpldis7ex9edqxfpjmwz.png') no-repeat center center/cover;
+    
+    
 }
 #apple_store{
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Available_on_the_App_Store_%28black%29.png/640px-Available_on_the_App_Store_%28black%29.png') no-repeat center center/cover;
@@ -404,6 +541,7 @@ body{
 .box_move img{
     width: 250px;
     height: 500px;
+    margin: 25px 5px;
     left: -500%;
     /*border: 2px solid cyan;*/
 }
@@ -530,7 +668,11 @@ body{
 
 /*Phone and Tablet max-width:1050px*/
 @media only screen and (max-width:1100px){
-    /*Footer*/
+    /*Section : Home*/
+    #home{
+        height: 470px;
+    }
+    /*Section: Footer*/
     #foot .box{
         margin: 20px;
     }
@@ -563,17 +705,24 @@ body{
     #foot .formde{
         font-size: 2.2rem;
     }
-    /*Offers*/
-    .offers{
-        height: 610px;
-    }
+    /*section: Offers*/
+    /*.offers{
+        height: 600px;
+    }*/
     #offer h1{
         font-size: 2.5rem;
     }
-    #offer .btn{
-        font-size: 1.3rem;
-    }
     
+    #offer .box1{
+        width: 285px;
+    }
+    #offer .box2{
+        width: 285px;
+    }
+    #offer  .upper{
+        margin: 5px;
+    }
+    /*section: Download The App*/
     #app .photo_btn{
     margin-left: 20%;
     margin-right: 20%;
@@ -584,6 +733,39 @@ body{
     #app .box_move{
         justify-content: center;
         align-content: center;
+    }
+    /*section: SERVICES*/
+    #ser{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #services{
+        height: 1600px;
+    } 
+    #ser .icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #ser .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #ser .icon_btn{
+        width: 160px;
+        height: 160px;
+        margin: 5px;
+    }
+    #ser .icon_text{
+        width: 180px;
+        height: 180px;
+        margin: 10px;
+    }
+    #ser .icon_text p{
+        font-size: 1.2rem;
     }
 }
 
@@ -630,26 +812,43 @@ body{
     <section class="offers">
         <h1 class="head-pri" width="100%" align="center">OFFERS FOR YOU</h1>
         <div id="offer">
+            <div class="upper">
             <div class="box">
+                <div class="box1">
                 <img src="https://us.123rf.com/450wm/kakigori/kakigori1605/kakigori160500012/56673409-beautiful-young-bride-and-groom-couple-holding-hands-on-wedding-day.jpg?ver=6" alt="">
                 <h1 class="head-sec" align="center">30% Discount</h1>
                 <p align="center">Earn upto 30% Discount on Wedding Packages.</p>
                 <p align="center">*T&C Apply</p>
+                </div>
+                <div class="box2">
                 <button class="btn" >FIND MORE</button>
+                </div>
             </div>
+            </div>
+            <div class="upper">
             <div class="box">
+                <div class="box1">
                 <img src="https://static.vecteezy.com/system/resources/previews/002/644/884/original/golden-coins-stack-with-coin-in-front-of-it-flat-illustration-isolated-on-white-background-gold-coins-in-cartoon-style-balance-profit-income-statement-and-cash-vector.jpg">
                 <h1 class="head-sec" align="center">Earn Barbera Points</h1>
                 <p align="center">Groom youself and earn upto 100 Barbera Points.</p>
                 <p align="center">*T&C Apply</p>
+                </div>
+                <div class="box2">
                 <button class="btn" >FIND MORE</button>
+                </div>
             </div>
+            </div>
+            <div class="upper">
             <div class="box">
+                <div class="box1">
                 <img src="https://cdn.pixabay.com/photo/2017/05/26/05/38/discount-2345221_960_720.png" alt="">
                 <h1 class="head-sec" align="center">Special Packages</h1>
                 <p align="center">Get upto 50% Discount on special packages.</p>
                 <p align="center">*T&C Apply</p>
+                </div>
+                <div class="box2">
                 <button class="btn" >FIND MORE</button>
+                </div>
             </div>
         </div>
     </section>
@@ -682,14 +881,146 @@ body{
     <section id="services">
         <h1 class="head-pri">SERVICES</h1>
         <div id="ser">
+            
         <div class="box">
+            <div class="main">
             <!--<img src="https://www.pngitem.com/pimgs/m/132-1322518_man-hair-logo-png-transparent-png.png" alt="">-->
             <button class="medbtn" id="btn_male">MEN</button>
-        </div>
+            </div>
+            <div class="icon">
+                
+            <div class="icon_bar">
+                
+            <div class="icon_text">    
+            <button class="icon_btn" id="m_1"></button>
+            <p>HAIRCUT</p>
+            </div>
+            
+            <div class="icon_text">    
+            <button class="icon_btn" id="m_2"></button>
+            <p>SHAVING</p>
+            </div>
+            
+            <div class="icon_text">    
+            <button class="icon_btn" id="m_3"></button>
+            <p>FACIAL</p>
+            </div>
+            
+            </div>
+            
+            <div class="icon_bar">
+                
+            <div class="icon_text">    
+            <button class="icon_btn" id="m_4"></button>
+            <p>HAIR COLOR</p>
+            </div>
+            
+            <div class="icon_text">    
+            <button class="icon_btn" id="m_5"></button>
+            <p>HEAD MASSAGE</p>
+            </div>
+            
+            </div>
+            </div>
+        </div>    
+<hr>
         <div class="box">
-            <!--<img src="https://img.freepik.com/free-photo/female-hairdresser-making-hairstyle-brunette-woman-beauty-salon_176420-4465.jpg?size=626&ext=jpg&ga=GA1.2.1728028159.1615593600" alt="">-->
+            <div class="main">
             <button class="medbtn" id="btn_female">WOMEN</button>
+            </div>
+            
+            <div class="icon">
+            
+            <div class="icon_bar">
+            
+            <div class="icon_text">   
+            <button class="icon_btn" id="fm_1"></button>
+            <p>HAIRCUT</p>
+            </div>
+            
+            <div class="icon_text">   
+            <button class="icon_btn" id="fm_2"></button>
+            <P>HAIR CARE</P>
+            </div>
+            
+            <div class="icon_text">   
+            <button class="icon_btn" id="fm_3"></button>
+            <P>HAIR COLOR</P>
+            </div>
+            
+            </div>
+            
+            <div class="icon_bar">
+                
+            <div class="icon_text">
+            <button class="icon_btn" id="fm_4"></button>
+            <P>THREADING</P>
+            </div>
+            
+            <div class="icon_text">   
+            <button class="icon_btn" id="fm_5"></button>
+            <P>FACIAL</P>
+            </div>
+            
+            <div class="icon_text">   
+            <button class="icon_btn" id="fm_6"></button>
+            <P>WAXING</P>
+            </div>
+            
+            </div>
+            
+            <div class="icon_bar">
+                
+            <div class="icon_text">   
+            <button class="icon_btn" id="fm_7"></button>
+            <p>MEHANDI</p>
+            </div>
+            
+            <div class="icon_text">   
+            <button class="icon_btn" id="fm_8"></button>
+            <p>BLEACH</p>
+            </div>
+            
+            </div>
+            
+            </div>
         </div>
+<hr>        
+        <div class="box">
+            <div class="main">
+            <button class="medbtn" id="btn_wedding">WEDDING PACKAGES</button>
+            </div>
+            <div class="icon">
+            <div class="icon_bar">
+                
+            <div class="icon_text">
+            <button class="icon_btn" id="wed_1"></button>
+            <P>BRIDE</P>
+            </div>
+            
+            <div class="icon_text">
+            <button class="icon_btn" id="wed_2"></button>
+            <P>GROOM</P>
+            </div>
+            
+            <div class="icon_text">
+            <button class="icon_btn" id="wed_3"></button>
+            <P>MEHANDI</P>
+            </div>
+            
+            </div>
+            
+            <div class="icon_bar">
+                
+            <div class="icon_text">
+            <button class="icon_btn" id="wed_4"></button>
+            <P>MAKE-UP</P>
+            </div>
+            
+            </div>
+            </div>
+        </div>
+        
         </div>
     </section>
     
