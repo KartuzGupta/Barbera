@@ -6,6 +6,7 @@ Barbera
     <!--<link rel="stylesheet" href="style.css">-->
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
         /*CSS Reset*/
 *{
     margin: 0px;
@@ -343,6 +344,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    margin: 10px 30px;
     /*background-color: grey;*/
 }
 #services h1{
@@ -364,15 +366,14 @@ body{
 #ser .icon_btn{
     width: 105px;
     height: 105px;
-    font-size: 1rem; 
     margin: 4px;
     border: 1px grey;
     border-radius: 5px;
     margin-top: 8px;
 }
 #ser .icon_btn:hover{
-    font-size: 1.1rem; 
-    box-shadow: 1px 1px 1px 1px  #8080801a;
+    
+    box-shadow: 3px 3px 3px 3px  #8080801a;
 }
 #ser .main{
     display: flex;
@@ -398,7 +399,7 @@ body{
     height: 250px;
     border-radius: 10px;
     border: 1px white;
-    box-shadow: 1.5px 1.5px 1.5px 1.5px #8080801a;
+    box-shadow: 2px 2px 2px 2px #8080801a;
 }
 /*Big Icon Photos*/
 #btn_male{
@@ -411,7 +412,7 @@ body{
     background: url('https://cdn3.vectorstock.com/i/1000x1000/20/27/wedding-ring-with-diamond-circle-icon-vector-7672027.jpg') no-repeat center center/cover;
 }
 #ser .medbtn:hover{
-    box-shadow: 2.5px 2.5px 2.5px 2.5px #8080801a;
+    box-shadow: 3px 3px 3px 3px #8080801a;
     background-color: #8080801a;
     font-size: 2.1rem;
     border: 1px white;
@@ -569,35 +570,49 @@ body{
     0%   {left:-200%; top:0px;}
     100% {left: 0px; top:0px;}
 }
+
 /*Section: Footer*/
+#footer{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
 #foot{
     background-color: black;
     color: white;
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 200px;
 }
 #foot .box{
     display: flex;
     flex-direction: column;
-    margin: 40px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     /*border: 2px solid red;*/
 }
 /*Phone and Tablet*/
 
 #foot .box ul{
     text-decoration: none;
+    display: flex;
 }
 #foot .box ul li{
     list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin:10px 15px;
+    color: lightgrey;
+    
 }
 #foot .box a{
     text-decoration: none;
-    color: white;
+    color: lightgrey;
+    font-family: 'Montserrat', sans-serif;
 }
 #foot .box a:hover{
-    color: grey;
+    color: white;
 }
 
 #footer p{
@@ -605,11 +620,14 @@ body{
     color: white;
     width: 100%;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 #foot .box h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    margin-left: 10px;
     list-style: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #foot .form_box{
@@ -622,22 +640,60 @@ body{
 #foot .formde{
     margin: 5px;
     padding: 1px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #foot .submit_btn{
     display: block;
-    margin: auto;
-    width: 100%;
-    font-size: 1.1rem;
+    width: 30%;
+    font-size: 1.3rem;
     border-radius: 5px;
     background-color: white;
     color: grey;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 5px;
 }
 #foot .submit_btn:hover{
     color: white;
-    background-color: lightgrey; 
+    background-color: grey; 
+}
+#foot .icon_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#foot .icon_btn{
+    width: 55px;
+    height: 55px;
+    margin: 8px;
+    border: none;
+    border-radius: 10px;
+}
+/*Social Media Icons Images*/
+#insta{
+    background: url('https://i.pinimg.com/originals/c6/2c/05/c62c055ede6aadbb1f94a555071c98b9.jpg') no-repeat center center/cover;
+}
+#facebook{
+    background: url('https://i2.wp.com/socialmediaicons.biz/wp-content/uploads/2019/04/Facebook-vector-white-round-social-media-icons.jpg?fit=1080%2C1080&ssl=1') no-repeat center center/cover;
+    z-index: 1;
+}
+#linkedin{
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPG-vDpVduE1tHuJIiR3pfx8p-QYEZQo4L-l-6W5zmVTiNoYGDV63ZpcO2yLMloGeavyk&usqp=CAU') no-repeat center center/cover;
+
+}
+#pintrest{
+         background: url('https://i.pinimg.com/originals/c8/3e/66/c83e661429ac53ea8cbb597e047c35fd.png') no-repeat center center/cover;
+
+}
+#youtube{
+     background: url('https://cutewallpaper.org/21/youtube-logo-black-background/Youtube-White-Icon-Youtube-Logo-Youtube-Icon-Youtube-PNG-.jpg') no-repeat center center/cover;
+    
+}
+#twitter{
+     background: url('https://pngimg.com/uploads/twitter/twitter_PNG2.png') no-repeat center center/cover;
+    
 }
 /*Utility Classes*/
 
@@ -672,16 +728,16 @@ body{
     #home{
         height: 470px;
     }
+    
     /*Section: Footer*/
-    #foot .box{
-        margin: 20px;
-    }
     #foot{
+        display: flex;
         flex-direction: column;
+        margin: 5px 25px;
     }
     #foot .box{
         flex-direction: column;
-        margin: 5px;
+        margin: 10px;
         font-size: 1.7rem;
     }
     #foot .box ul{
@@ -701,6 +757,8 @@ body{
     border-radius: 5px;
     background-color: white;
     color: grey;
+    width: 98.1%;
+    margin-top: 10px;
     }
     #foot .formde{
         font-size: 2.2rem;
@@ -740,9 +798,10 @@ body{
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        margin: 5px 30px;
     }
     #services{
-        height: 1600px;
+        height: 1650px;
     } 
     #ser .icon{
         display: flex;
@@ -753,6 +812,7 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin: 10px 90px;
     }
     #ser .icon_btn{
         width: 160px;
@@ -1042,37 +1102,31 @@ body{
             <div class="box">
                 <h1>Serving in:</h1>
                 <ul>
-                    <li>Jaipur</li><hr>
-                    <li>City 2</li><hr>
-                    <li>City 3</li><hr>
-                    <li>City 4</li><hr>
-                    <li>City 5</li><hr>
-                    <li>City 6</li><hr>
-                    <li>City 7</li><hr>
+                    <li>Jaipur</li>
+                    <li>City 2</li>
+                    <li>City 3</li>
+                    <li>City 4</li>
+                    <li>City 5</li>
+                    <li>City 6</li>
+                    <li>City 7</li>
                     <li>City 8</li>
                 </ul>
             </div>
-            <div class="box">
+            <hr>
+            <!--<div class="box">
                 <h1>Social Media:</h1>
                 <ul>
-                    <li class="item"><a href="https://www.instagram.com/barbera_online_salon/">Instagram</a></li><hr>
-                    <li class="item"><a href="#">Facebook</a></li><hr>
-                    <li class="item"><a href="#">Gmail</a></li><hr>
-                    <li class="item"><a href="#">Twitter</a></li><hr>
-                    <li class="item"><a href="#">Youtube</a></li><hr>
-                    <li class="item"><a href="#">Linked In</a></li><hr>
-                    <li class="item"><a href="#">Gmail</a></li><hr>
-                    <li class="item"><a href="#">Pinterest</a></li>
+                    <li class="item"><a href="https://www.instagram.com/barbera_online_salon/">Instagram</a></li>
+                    <li class="item"><a href="#">Facebook</a></li>
+                    <li class="item"><a href="#">Twitter</a></li>
+                    <li class="item"><a href="#">Youtube</a></li>
                 </ul>
-            </div>    
+            </div> -->   
             <div class="box">
                 <h1><a href="#">Contact Us:</a></h1>
                 <ul>
-                    <li>Phone Number :</li>
-                    <li>7007222155</li>
-                    <hr>
-                    <li>Gmail :</li>
-                    <li>barbera@gmail.com</li>
+                    <li>Phone Number: 9876452823</li>
+                    <li><a href="#">Gmail: barbera@gmail.com</a></li>
                 </ul>
             </div>
             <div class="box">
@@ -1084,6 +1138,18 @@ body{
                 <button class="submit_btn" type="submit">SUBMIT NOW</button>
             </form>
             </div>
+            <div class="box">
+                <p>Follow Us</p>
+                <div class="icon_bar">
+                    <button class="icon_btn" id="insta"></button>
+                    <button class="icon_btn" id="facebook"></button>
+                    <button class="icon_btn" id="twitter"></button>
+                    <button class="icon_btn" id="linkedin"></button>
+                    <button class="icon_btn" id="pintrest"></button>
+                    <button class="icon_btn" id="youtube"></button>
+                </div>
+            </div>
+            <hr>
         </div>
          <p>&copy; Barbera 2021 </p>
     </footer>
