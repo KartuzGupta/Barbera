@@ -7,11 +7,15 @@ Barbera
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
         /*CSS Reset*/
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Bree Serif', serif;
+    /*font-family: 'Bree Serif', serif;*/
+    font-family: 'Roboto Slab', serif;
+/*    font-family: 'Montserrat', sans-serif;*/
+
 }
 body{
      background-color: #a3a3a347;
@@ -519,10 +523,17 @@ body{
     height: 550px;
     /*border: 1px solid red;*/
 }
+/*@media only screen and (max-width:1100px)
+{
+    #app{
+        height: 600px;
+    } 
+}*/
 #app::before{
     content: "";
     position: absolute;
-    background: url('https://thumbs.dreamstime.com/b/hairdresser-tools-black-background-copy-space-center-123969265.jpg') no-repeat center center/cover ;
+    /*background: url('https://thumbs.dreamstime.com/b/hairdresser-tools-black-background-copy-space-center-123969265.jpg') no-repeat center center/cover ;*/
+    background-color: #423F3E;
     width: 100%;
     height: 550px;
     opacity: 90%;
@@ -541,9 +552,7 @@ body{
 #app .photo_btn{
     display: block;
     width: 180px;
-    margin: 10px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: auto;
     height: 60px;
     background-color: black;
     border-radius: 5px;
@@ -560,7 +569,9 @@ body{
 #apple_store{
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Available_on_the_App_Store_%28black%29.png/640px-Available_on_the_App_Store_%28black%29.png') no-repeat center center/cover;
 }
-
+#app h2{
+    font-family: 'Roboto Slab', serif;
+}
 /*Moving Store*/
 #app .box_move{
     display: flex;
@@ -600,7 +611,60 @@ body{
     0%   {left:-200%; top:0px;}
     100% {left: 0px; top:0px;}
 }
+/*Section: feedback*/
+#feedback{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    background-color: #2B2B2B;
+}
+#feedback h1{
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+    color: #EEEEEE;
+    font-family: 'Montserrat', sans-serif;
 
+}
+#feedback .box{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 40px;
+}
+#feedback .form_box{
+    display: flex;
+    /*border: 1px solid white;*/
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#feedback .formde{
+    margin: 5px;
+    padding: 1px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#feedback .submit_btn{
+    display: block;
+    width: 30%;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 5px;
+}
+#feedback .submit_btn:hover{
+    color: white;
+    background-color: grey; 
+}
 /*Section: Footer*/
 #footer{
     font-family: 'Montserrat', sans-serif;
@@ -619,11 +683,10 @@ body{
 #foot .box{
     display: flex;
     flex-direction: column;
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
+    padding: 0px;
     /*border: 2px solid red;*/
 }
-/*Phone and Tablet*/
 
 #foot .box ul{
     text-decoration: none;
@@ -632,8 +695,9 @@ body{
 #foot .box ul li{
     list-style: none;
     font-family: 'Montserrat', sans-serif;
-    margin:10px 15px;
+    margin:10px 10px;
     color: lightgrey;
+    font-size: 1.2rem;
     
 }
 #foot .box a{
@@ -653,20 +717,20 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 #foot .box h1{
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    font-size: 1.3rem;
+    margin: 10px;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
 }
-
+/*
 #foot .form_box{
     display: flex;
-   /* border: 1px solid white;*/
+    border: 1px solid white;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
+
 #foot .formde{
     margin: 5px;
     padding: 1px;
@@ -688,7 +752,7 @@ body{
 #foot .submit_btn:hover{
     color: white;
     background-color: grey; 
-}
+}*/
 #foot .icon_bar{
     display: flex;
     flex-direction: row;
@@ -752,6 +816,8 @@ body{
     color: white;
 }
 .head-sec{
+    display: block;
+    margin: auto;
     font-size: 2rem;
     padding: 10px;
 }
@@ -772,7 +838,7 @@ body{
     #foot .box{
         flex-direction: column;
         margin: 10px;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
     #foot .box ul{
         display: flex;
@@ -786,8 +852,8 @@ body{
         display: block;
         width: 100%;
     }
-    #foot .submit_btn{
-    font-size: 2.2rem;
+    #feedback .submit_btn{
+    font-size: 1.3rem;
     border-radius: 5px;
     background-color: white;
     color: grey;
@@ -795,7 +861,7 @@ body{
     margin-top: 10px;
     }
     #foot .formde{
-        font-size: 2.2rem;
+        font-size: 1.3rem;
     }
     /*section: Offers*/
     /*.offers{
@@ -815,10 +881,6 @@ body{
         margin: 5px;
     }
     /*section: Download The App*/
-    #app .photo_btn{
-    margin-left: 20%;
-    margin-right: 20%;
-    }
     #app::before{
         height: 600px;
     }
@@ -1125,14 +1187,27 @@ body{
     
     <section id="app">
         <div class="box">
-        <h1 class="head-pri">BOOK FROM YOUR MOBILE</h1>
-        <h1 class="head-sec">Download our App from Google Play Store and Apple Store.</h1>
+        <h2 class="head-pri">BOOK FROM YOUR MOBILE</h1>
+        <h2 class="head-sec">Download our App from Google Play Store and Apple Store.</h1>
         <button class="photo_btn" id="google_store" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.barbera.barberaconsumerapp&hl=en_IN&gl=US';"></button>
         <button class="photo_btn" id="apple_store"></button>
+        <h2 class="head-sec">50,000+ Downloads</h1>
         </div>
         <div class="box_move">
             <img id="move_1" src="https://image.winudf.com/v2/image1/Y29tLmJhcmJlcmEuYmFyYmVyYWNvbnN1bWVyYXBwX3NjcmVlbl8xXzE2MDM1MTcyOTRfMDY0/screen-1.jpg?fakeurl=1&type=.jpg" alt="">
             <img id="move_2" src="https://play-lh.googleusercontent.com/1E33qxK09D_kiqJwP51Zae0nXYiXViAJz1IUjXCqmyEjMj9ISDVlq3_s9TvkfEoaSEM=w1536-h696-rw" alt="">
+        </div>
+    </section>
+    
+    <section id="feedback">
+        <div class="box">
+                <h1>Any Suggestions or Queries...Just Drop a Message!!</h1>
+            <form class="form_box">
+                <input type="text" class="formde" id="fname" placeholder="Name*">
+                <input type="email" class="formde" id="femail" placeholder="E-mail*">
+                <textarea name="message" id="msg" rows="8" cols="40" class="formde" placeholder="Enter Your Message*"></textarea>
+                <button class="submit_btn" type="submit">SUBMIT NOW</button>
+            </form>
         </div>
     </section>
     
@@ -1168,7 +1243,7 @@ body{
                     <li><a href="#">Gmail: barbera@gmail.com</a></li>
                 </ul>
             </div>
-            <div class="box">
+            <!--<div class="box">
                 <h1>Any Suggestions or Queries...Just Drop a Message!!</h1>
             <form class="form_box">
                 <input type="text" class="formde" id="fname" placeholder="Name*">
@@ -1176,7 +1251,7 @@ body{
                 <textarea name="message" id="msg" rows="8" cols="40" class="formde" placeholder="Enter Your Message*"></textarea>
                 <button class="submit_btn" type="submit">SUBMIT NOW</button>
             </form>
-            </div>
+            </div>-->
             <div class="box">
                 <p>Follow Us</p>
                 <div class="icon_bar">
