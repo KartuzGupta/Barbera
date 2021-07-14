@@ -76,12 +76,12 @@ body{
     margin: auto;
     border-radius: 30px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 #navbar ul li a:hover{
     color: #E8F0F2;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 /*Section Home*/
@@ -312,9 +312,15 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100px;
+    height: 169px;
     flex-direction: column;
     /*border: 1px solid violet;*/
+}
+@media only screen and (max-width:1181px)
+{
+    #cost-rev{
+        height: 135px;
+    }
 }
 #cost-rev .bigbtn{
     display: block;
@@ -330,7 +336,26 @@ body{
     box-shadow: 1px 1px 1px 1px grey;
     background-color: #ffffff6b;
 }
-
+/*Numbers*/
+#number{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
+    font-size: 2rem; 
+}
+#number .num{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#number p{
+    display: block;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
 /*Services*/
 
 #services{
@@ -359,10 +384,10 @@ body{
     margin: 10px 10px;
     padding: 10px;
 }
-#ser .icon_bar{
+/*#ser .icon_bar{
     display: flex;
     flex-direction: row;
-}
+}*/
 #ser .icon_btn{
     width: 105px;
     height: 105px;
@@ -389,6 +414,10 @@ body{
     height: 300px;
 }
 */
+#ser .icon{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
 #ser .medbtn{
     display: block;
     margin: auto;
@@ -481,6 +510,7 @@ body{
 #wed_4{
     background: url('https://www.crushpixel.com/big-static19/preview4/face-powder-blush-case-app-3722003.jpg') no-repeat center center/cover;
 }
+/*Section : Number*/
 
 /* Section: App*/
 #app{
@@ -671,6 +701,10 @@ body{
     border: none;
     border-radius: 10px;
 }
+#foot .icon_btn:hover{
+    width: 56px;
+    height: 56px;
+}
 /*Social Media Icons Images*/
 #insta{
     background: url('https://i.pinimg.com/originals/c6/2c/05/c62c055ede6aadbb1f94a555071c98b9.jpg') no-repeat center center/cover;
@@ -803,11 +837,11 @@ body{
     #services{
         height: 1650px;
     } 
-    #ser .icon{
+    /*#ser .icon{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+    }*/
     #ser .box{
         display: flex;
         flex-direction: row;
@@ -852,7 +886,6 @@ body{
             <!--<li class="item"><a href="#">BOOK APPOINTMENT</a></li>-->
             <li class="item"><a href="#">SERVICES</a></li>
             <li class="item"><a href="#">SIGN IN</a></li>
-            <li class="item"><a href="#">REGISTER</a></li>
             <li class="item"><a href="#">TIPS</a></li>
             <!--<li class="item"><a href="#">REGISTER AS A PROFFESIONAL</a></li>-->
             <!--<li class="item"><a href="#">RATE US</a></li>-->
@@ -907,7 +940,7 @@ body{
                 <p align="center">*T&C Apply</p>
                 </div>
                 <div class="box2">
-                <button class="btn" >FIND MORE</button>
+                <button class="btn" onclick="window.location.href = 'https://fonts.google.com/';">FIND MORE</button>
                 </div>
             </div>
         </div>
@@ -938,6 +971,12 @@ body{
         <button class="bigbtn">TESTIMONIALS</button>
     </section>
     
+    <section id="number">
+        <div class="num">
+            <p>332034+</p><p>Happy and Satisfied Customers</p>
+        </div>
+    </section>
+    
     <section id="services">
         <h1 class="head-pri">SERVICES</h1>
         <div id="ser">
@@ -949,7 +988,7 @@ body{
             </div>
             <div class="icon">
                 
-            <div class="icon_bar">
+            <!--<div class="icon_bar">-->
                 
             <div class="icon_text">    
             <button class="icon_btn" id="m_1"></button>
@@ -963,16 +1002,16 @@ body{
             
             <div class="icon_text">    
             <button class="icon_btn" id="m_3"></button>
-            <p>FACIAL</p>
+            <p>HAIR COLOR</p>
             </div>
             
-            </div>
+            <!--</div>-->
             
-            <div class="icon_bar">
+            <!--<div class="icon_bar">-->
                 
             <div class="icon_text">    
             <button class="icon_btn" id="m_4"></button>
-            <p>HAIR COLOR</p>
+            <p>FACIAL</p>
             </div>
             
             <div class="icon_text">    
@@ -980,7 +1019,7 @@ body{
             <p>HEAD MASSAGE</p>
             </div>
             
-            </div>
+            <!--</div>-->
             </div>
         </div>    
 <hr>
@@ -991,7 +1030,7 @@ body{
             
             <div class="icon">
             
-            <div class="icon_bar">
+            <!--<div class="icon_bar">-->
             
             <div class="icon_text">   
             <button class="icon_btn" id="fm_1"></button>
@@ -1008,9 +1047,9 @@ body{
             <P>HAIR COLOR</P>
             </div>
             
-            </div>
+            <!--</div>-->
             
-            <div class="icon_bar">
+            <!--<div class="icon_bar">-->
                 
             <div class="icon_text">
             <button class="icon_btn" id="fm_4"></button>
@@ -1027,9 +1066,9 @@ body{
             <P>WAXING</P>
             </div>
             
-            </div>
+            <!--</div>-->
             
-            <div class="icon_bar">
+            <!--<div class="icon_bar">-->
                 
             <div class="icon_text">   
             <button class="icon_btn" id="fm_7"></button>
@@ -1041,7 +1080,7 @@ body{
             <p>BLEACH</p>
             </div>
             
-            </div>
+            <!--</div>-->
             
             </div>
         </div>
@@ -1051,7 +1090,7 @@ body{
             <button class="medbtn" id="btn_wedding">WEDDING PACKAGES</button>
             </div>
             <div class="icon">
-            <div class="icon_bar">
+            <!--<div class="icon_bar">-->
                 
             <div class="icon_text">
             <button class="icon_btn" id="wed_1"></button>
@@ -1068,16 +1107,16 @@ body{
             <P>MEHANDI</P>
             </div>
             
-            </div>
+            <!--</div>-->
             
-            <div class="icon_bar">
+            <!--<div class="icon_bar">-->
                 
             <div class="icon_text">
             <button class="icon_btn" id="wed_4"></button>
             <P>MAKE-UP</P>
             </div>
             
-            </div>
+            <!--</div>-->
             </div>
         </div>
         
@@ -1141,7 +1180,7 @@ body{
             <div class="box">
                 <p>Follow Us</p>
                 <div class="icon_bar">
-                    <button class="icon_btn" id="insta"></button>
+                    <button class="icon_btn" id="insta" onclick="window.location.href = 'https://www.instagram.com/barbera_online_salon/';"></button>
                     <button class="icon_btn" id="facebook"></button>
                     <button class="icon_btn" id="twitter"></button>
                     <button class="icon_btn" id="linkedin"></button>
