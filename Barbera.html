@@ -42,7 +42,6 @@ body{
 
 #logo{
     margin: 10px 10px;
-    background-color: #E8F0F2;
 }
 
 #logo img{
@@ -107,7 +106,7 @@ body{
     margin: 0px 100px;
     flex-direction: column;
     text-align: center;
-    height: 450px;
+    height: 510px;
 }
 
 #home h1{
@@ -136,15 +135,21 @@ body{
 }
 /*Section Offers*/
 
-.offers{
+#offers{
+    display: flex;
+    flex-direction: column;
     height: 600px;
-    background-color: #a3a3a347;
+    background-color: #EFEFEF;
    /* border: 1px solid blue;*/
 }
-
-
-.offers h1{
-    margin-top: 20px;
+.heading_box{
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+#offers h1{
+    display: block;
+    margin: auto;
     font-size: 2.3rem;
     color: #2B2B2B;
 }
@@ -181,7 +186,7 @@ body{
     padding: 5px;
     margin: auto;
     border-radius: 15px;
-    background-color: #423F3E;
+    background-color: #bebcbc;
     width: 300px;
     height: 450px;
     color: white;
@@ -204,7 +209,7 @@ body{
     height: 450px;
     width: 300px;
     border-radius: 15px;
-    background-color: #D6D2C4;
+    background-color: #DDDDDD;
 }
 #offer .box2{
     /*border: 2px solid cyan;*/
@@ -360,6 +365,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
+#costumer_num{
+    font-family: 'Montserrat', sans-serif;
+}
 /*Services*/
 
 #services{
@@ -377,7 +385,6 @@ body{
     /*background-color: grey;*/
 }
 #services h1{
-    margin-top: 20px;
     color: #2c0e0e;
 }
 #ser .box{
@@ -533,7 +540,7 @@ body{
     content: "";
     position: absolute;
     /*background: url('https://thumbs.dreamstime.com/b/hairdresser-tools-black-background-copy-space-center-123969265.jpg') no-repeat center center/cover ;*/
-    background-color: #423F3E;
+    background-color: #EEEEEE;
     width: 100%;
     height: 550px;
     opacity: 90%;
@@ -570,6 +577,7 @@ body{
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Available_on_the_App_Store_%28black%29.png/640px-Available_on_the_App_Store_%28black%29.png') no-repeat center center/cover;
 }
 #app h2{
+    color: #393E46;
     font-family: 'Roboto Slab', serif;
 }
 /*Moving Store*/
@@ -611,29 +619,30 @@ body{
     0%   {left:-200%; top:0px;}
     100% {left: 0px; top:0px;}
 }
+
 /*Section: feedback*/
 #feedback{
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 500px;
+    height: 400px;
     background-color: #2B2B2B;
 }
 #feedback h1{
     display: block;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #EEEEEE;
     font-family: 'Montserrat', sans-serif;
 
 }
 #feedback .box{
-    width: 70%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 40px;
+    margin: 25px;
 }
 #feedback .form_box{
     display: flex;
@@ -646,7 +655,7 @@ body{
 #feedback .formde{
     margin: 5px;
     padding: 1px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -654,7 +663,7 @@ body{
 #feedback .submit_btn{
     display: block;
     width: 30%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border-radius: 5px;
     background-color: white;
     color: grey;
@@ -759,15 +768,15 @@ body{
     justify-content: center;
 }
 #foot .icon_btn{
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
     margin: 8px;
     border: none;
     border-radius: 10px;
 }
 #foot .icon_btn:hover{
-    width: 56px;
-    height: 56px;
+    width: 42px;
+    height: 42px;
 }
 /*Social Media Icons Images*/
 #insta{
@@ -826,7 +835,7 @@ body{
 @media only screen and (max-width:1100px){
     /*Section : Home*/
     #home{
-        height: 470px;
+        height: 500px;
     }
     
     /*Section: Footer*/
@@ -852,6 +861,10 @@ body{
         display: block;
         width: 100%;
     }
+    /*feedback*/
+    #feedback .box{
+        width: 60%;
+    }
     #feedback .submit_btn{
     font-size: 1.3rem;
     border-radius: 5px;
@@ -864,7 +877,7 @@ body{
         font-size: 1.3rem;
     }
     /*section: Offers*/
-    /*.offers{
+    /*#offers{
         height: 600px;
     }*/
     #offer h1{
@@ -882,7 +895,7 @@ body{
     }
     /*section: Download The App*/
     #app::before{
-        height: 600px;
+        height: 550px;
     }
     #app .box_move{
         justify-content: center;
@@ -941,7 +954,7 @@ body{
     
     <nav id="navbar">
         <div id="logo">
-            <img src="https://i.im.ge/2021/07/10/O8xux.png" alt="Barbera" width="150px">
+            <img src="https://barbera.netlify.app/nikita.jpeg" alt="Barbera" width="150px">
         </div>
         <ul>
             <li class="item"><a href="#">HOME</a></li>
@@ -964,8 +977,11 @@ body{
         <button class="btn">BOOK APPOINTMENT</button>
     </section>
     
-    <section class="offers">
+    <section id="offers">
+        <div class="heading_box">
         <h1 class="head-pri" width="100%" align="center">OFFERS FOR YOU</h1>
+        <hr>
+        </div>
         <div id="offer">
             <div class="upper">
             <div class="box">
@@ -1035,12 +1051,15 @@ body{
     
     <section id="number">
         <div class="num">
-            <p>332034+</p><p>Happy and Satisfied Customers</p>
+           <p><span id="costumer_num"></span>+</p> <p>Happy and Satisfied Customers</p>
         </div>
     </section>
     
     <section id="services">
+        <div class="heading_box">
         <h1 class="head-pri">SERVICES</h1>
+        <hr>
+        </div>
         <div id="ser">
             
         <div class="box">
@@ -1191,7 +1210,7 @@ body{
         <h2 class="head-sec">Download our App from Google Play Store and Apple Store.</h1>
         <button class="photo_btn" id="google_store" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.barbera.barberaconsumerapp&hl=en_IN&gl=US';"></button>
         <button class="photo_btn" id="apple_store"></button>
-        <h2 class="head-sec">50,000+ Downloads</h1>
+        <h2 class="head-sec"><span id="download_num">0</span>+ Downloads</h1>
         </div>
         <div class="box_move">
             <img id="move_1" src="https://image.winudf.com/v2/image1/Y29tLmJhcmJlcmEuYmFyYmVyYWNvbnN1bWVyYXBwX3NjcmVlbl8xXzE2MDM1MTcyOTRfMDY0/screen-1.jpg?fakeurl=1&type=.jpg" alt="">
@@ -1267,5 +1286,30 @@ body{
         </div>
          <p>&copy; Barbera 2021 </p>
     </footer>
+    <!--JavaScript-->
+    <script>
+    //section : Numbers
+            let costumer_num = document.getElementById("costumer_num");
+            let i=0;
+            let timer;
+            function change_1(i)
+            {
+                costumer_num.innerHTML = i;
+            }
+                for(i=0; i<=100; i++)
+                {
+                    timer =setTimeout(change_1, 5000+(10*i), 250*i);
+                }
+    //section : Numbers
+            let download_num = document.getElementById("download_num");
+            function change(i)
+            {
+                download_num.innerHTML = i;
+            }
+            for(i=0; i<=200; i++)
+            {
+                timer =setTimeout(change, 10000+(10*i), 250*i);
+            }    
+    </script>
 </body>
 </html>
