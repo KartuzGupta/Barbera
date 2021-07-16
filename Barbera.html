@@ -107,7 +107,9 @@ body{
     top:0;
     cursor: pointer;
 }
-
+.navbar hr{
+    display: none;
+}
 .nav-list{
     width: 70%; 
     display: flex; 
@@ -115,11 +117,13 @@ body{
 }    
 
 .nav-list li{
+    font-family: 'Montserrat', sans-serif;
     list-style: none;
     padding: 20px 30px;
 }
 
 .nav-list li a{
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -1003,16 +1007,12 @@ body{
         flex-direction: column;
     }
     .navbar{
-        height: 447px;
+        height: 465px;
         flex-direction: column;
          border: 1px solid white;
         transition: all 0.7s ease-out;
     }
    
-    .box-main{
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
     .burger{
     display: block;
     }
@@ -1028,7 +1028,10 @@ body{
     .nav-list li a{
         font-size: 1.5rem;
     }
-    
+    .navbar hr{
+        display: block;
+        width: 70%;
+    }
 }
 }
 
@@ -1059,9 +1062,15 @@ body{
         <ul class="nav-list">
             <div class="logo"><img src="https://barbera.netlify.app/nikita.jpeg" alt="logo"></div>
             <li><a href="#">Home</a></li>
+            <hr>
             <li><a href="#services">Services</a></li>
+            <hr>
             <li><a href="#about">About</a></li>
+            <hr>
             <li><a href="#feedback">Contact Us</a></li>
+            <hr>
+            <li><a href="#">Tips</a></li>
+            
         </ul>
         
         <div class="burger">
