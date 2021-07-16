@@ -98,6 +98,9 @@ body{
     border: 3px solid white;
     border-radius: 50px;
     margin: 5px;
+    position: absolute;
+    top:5px;
+    left:15px;
 }
 .navbar{
     display: flex;
@@ -106,6 +109,7 @@ body{
     position: sticky;
     top:0;
     cursor: pointer;
+    height: 120px;
 }
 .navbar hr{
     display: none;
@@ -469,9 +473,10 @@ body{
     width: 105px;
     height: 105px;
     margin: 4px;
-    border: 1px grey;
-    border-radius: 5px;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px grey;
+    border-radius: 15px;
     margin-top: 8px;
+    
 }
 #ser .icon_btn:hover{
     
@@ -665,7 +670,7 @@ body{
     position: relative;
     animation-name: move_1;
     animation-duration: 4s;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 @keyframes move_1{
@@ -977,12 +982,11 @@ body{
         flex-direction: column;
     }
     .navbar{
-        height: 465px;
+        height: 450px;
         flex-direction: column;
          border: 1px solid white;
         transition: all 0.7s ease-out;
     }
-   
     .burger{
     display: block;
     }
@@ -998,6 +1002,10 @@ body{
     .nav-list li a{
         font-size: 1.5rem;
     }
+    .navbar a:hover{
+        font-size: 1.6rem;
+    }
+    
     .navbar hr{
         display: block;
         width: 70%;
@@ -1025,10 +1033,13 @@ body{
             <hr>
             <li><a href="#services">Services</a></li>
             <hr>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">About Us</a></li>
             <hr>
             <li><a href="#feedback">Contact Us</a></li>
             <hr>
+            <li><a href="#">Sign In</a></li>
+            <hr>
+            
             <li><a href="#">Tips</a></li>
             
         </ul>
