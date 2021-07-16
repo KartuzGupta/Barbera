@@ -1048,18 +1048,8 @@ body{
 </head>    
 <html>
 <body>
-    <!--
-    <div class="topnav" id="myTopnav">
-  <a href="#home">Home</a>
-  <a href="#news">Services</a>
-  <a href="#contact">Contact Us</a>
-  <a href="#about">About Us</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-    </a>
-  </div>-->
-    <nav class="navbar background">
-        <ul class="nav-list">
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
             <div class="logo"><img src="https://barbera.netlify.app/nikita.jpeg" alt="logo"></div>
             <li><a href="#">Home</a></li>
             <hr>
@@ -1175,12 +1165,10 @@ body{
             
         <div class="box">
             <div class="main">
-            <!--<img src="https://www.pngitem.com/pimgs/m/132-1322518_man-hair-logo-png-transparent-png.png" alt="">-->
+
             <button class="medbtn" id="btn_male">MEN</button>
             </div>
             <div class="icon">
-                
-            <!--<div class="icon_bar">-->
                 
             <div class="icon_text">    
             <button class="icon_btn" id="m_1"></button>
@@ -1196,10 +1184,6 @@ body{
             <button class="icon_btn" id="m_3"></button>
             <p>HAIR COLOR</p>
             </div>
-            
-            <!--</div>-->
-            
-            <!--<div class="icon_bar">-->
                 
             <div class="icon_text">    
             <button class="icon_btn" id="m_4"></button>
@@ -1211,7 +1195,6 @@ body{
             <p>HEAD MASSAGE</p>
             </div>
             
-            <!--</div>-->
             </div>
         </div>    
 <hr>
@@ -1221,8 +1204,6 @@ body{
             </div>
             
             <div class="icon">
-            
-            <!--<div class="icon_bar">-->
             
             <div class="icon_text">   
             <button class="icon_btn" id="fm_1"></button>
@@ -1239,10 +1220,6 @@ body{
             <P>HAIR COLOR</P>
             </div>
             
-            <!--</div>-->
-            
-            <!--<div class="icon_bar">-->
-                
             <div class="icon_text">
             <button class="icon_btn" id="fm_4"></button>
             <P>THREADING</P>
@@ -1258,10 +1235,6 @@ body{
             <P>WAXING</P>
             </div>
             
-            <!--</div>-->
-            
-            <!--<div class="icon_bar">-->
-                
             <div class="icon_text">   
             <button class="icon_btn" id="fm_7"></button>
             <p>MEHANDI</p>
@@ -1271,9 +1244,6 @@ body{
             <button class="icon_btn" id="fm_8"></button>
             <p>BLEACH</p>
             </div>
-            
-            <!--</div>-->
-            
             </div>
         </div>
 <hr>        
@@ -1282,8 +1252,7 @@ body{
             <button class="medbtn" id="btn_wedding">WEDDING PACKAGES</button>
             </div>
             <div class="icon">
-            <!--<div class="icon_bar">-->
-                
+
             <div class="icon_text">
             <button class="icon_btn" id="wed_1"></button>
             <P>BRIDE</P>
@@ -1298,17 +1267,12 @@ body{
             <button class="icon_btn" id="wed_3"></button>
             <P>MEHANDI</P>
             </div>
-            
-            <!--</div>-->
-            
-            <!--<div class="icon_bar">-->
                 
             <div class="icon_text">
             <button class="icon_btn" id="wed_4"></button>
             <P>MAKE-UP</P>
             </div>
-            
-            <!--</div>-->
+
             </div>
         </div>
         
@@ -1357,15 +1321,7 @@ body{
                 </ul>
             </div>
             <hr>
-            <!--<div class="box">
-                <h1>Social Media:</h1>
-                <ul>
-                    <li class="item"><a href="https://www.instagram.com/barbera_online_salon/">Instagram</a></li>
-                    <li class="item"><a href="#">Facebook</a></li>
-                    <li class="item"><a href="#">Twitter</a></li>
-                    <li class="item"><a href="#">Youtube</a></li>
-                </ul>
-            </div> -->   
+            
             <div class="box">
                 <h1><a href="#">Contact Us:</a></h1>
                 <ul>
@@ -1373,15 +1329,6 @@ body{
                     <li><a href="#">Gmail: barbera@gmail.com</a></li>
                 </ul>
             </div>
-            <!--<div class="box">
-                <h1>Any Suggestions or Queries...Just Drop a Message!!</h1>
-            <form class="form_box">
-                <input type="text" class="formde" id="fname" placeholder="Name*">
-                <input type="email" class="formde" id="femail" placeholder="E-mail*">
-                <textarea name="message" id="msg" rows="8" cols="40" class="formde" placeholder="Enter Your Message*"></textarea>
-                <button class="submit_btn" type="submit">SUBMIT NOW</button>
-            </form>
-            </div>-->
             <div class="box">
                 <p>Follow Us</p>
                 <div class="icon_bar">
@@ -1404,49 +1351,15 @@ body{
 navbar = document.querySelector('.navbar')
 navList = document.querySelector('.nav-list')
 
- 
-
-
 burger.addEventListener('click', ()=>{
-
     navList.classList.toggle('v-class-resp');
     navbar.classList.toggle('h-nav-resp');
     
 })
     
-   /*function isVisible($el) {
-    var winTop = $(window).scrollTop();
-    var winBottom = winTop + $(window).height();
-    var elTop = $el.offset().top;
-    var elBottom = elTop + $el.height();
-    return ((elBottom<= winBottom) && (elTop >= winTop));
-    }
-    function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}*/
     //section : Numbers
     function costumer_number()
     {
-        /*var myElement = document.getElementById('my-element');
-        var bounding = myElement.getBoundingClientRect();
-
-       function elementInViewport() {
-
-       var bounding = myElement.getBoundingClientRect();
-
-      if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
-
-        console.log('Element is in the viewport!');
-    } else {
-
-        console.log('Element is NOT in the viewport!');
-    }
-} */
             let costumer_num = document.getElementById("costumer_num");
             let i=0;
             let timer;
@@ -1454,15 +1367,11 @@ burger.addEventListener('click', ()=>{
             {
                 costumer_num.innerHTML = `${i}+ `;
             }
-            
-            /*if(isVisible($("#costumer_num"))==true)
-            {*/
                 for(i=0; i<=50; i++)
                 {
                     timer =setTimeout(change_1,(10*i), 100*i);
                 }
-            /*}    */
-               
+
     }            
     //section : Numbers
     function download_number()
@@ -1473,33 +1382,12 @@ burger.addEventListener('click', ()=>{
                 download_num.innerHTML = `${i}+ `;
             }
             
-            /*if(isVisible($("#download_num"))==true)
-            {*/
             for(i=0; i<=50; i++)
             {
                 timer =setTimeout(change, 500+(10*i), 20*i);
             }
-            /*}*/
     } 
-    /*
-    function isOnScreen(elem) {
-	// if the element doesn't exist, abort
-	if( elem.length == 0 ) {
-		return;
-	}
-	var $window = jQuery(window)
-	var viewport_top = $window.scrollTop()
-	var viewport_height = $window.height()
-	var viewport_bottom = viewport_top + viewport_height
-	var $elem = jQuery(elem)
-	var top = $elem.offset().top
-	var height = $elem.height()
-	var bottom = top + height
 
-	return (top >= viewport_top && top < viewport_bottom) ||
-	(bottom > viewport_top && bottom <= viewport_bottom) ||
-	(height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
-   }*/
 
      
     </script>
