@@ -797,37 +797,7 @@ body{
     list-style: none;
     font-family: 'Montserrat', sans-serif;
 }
-/*
-#foot .form_box{
-    display: flex;
-    border: 1px solid white;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
 
-#foot .formde{
-    margin: 5px;
-    padding: 1px;
-    font-size: 1.3rem;
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#foot .submit_btn{
-    display: block;
-    width: 30%;
-    font-size: 1.3rem;
-    border-radius: 5px;
-    background-color: white;
-    color: grey;
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 5px;
-}
-#foot .submit_btn:hover{
-    color: white;
-    background-color: grey; 
-}*/
 #foot .icon_bar{
     display: flex;
     flex-direction: row;
@@ -1283,7 +1253,7 @@ body{
         <div class="box">
         <h2 class="head-pri">BOOK FROM YOUR MOBILE</h1>
         <h2 class="head-sec">Download our App from Google Play Store and Apple Store.</h1>
-        <button class="photo_btn" id="google_store" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.barbera.barberaconsumerapp&hl=en_IN&gl=US';"></button>
+        <button class="photo_btn" id="google_store" onclick="window.open('https://play.google.com/store/apps/details?id=com.barbera.barberaconsumerapp&hl=en_IN&gl=US','_blank')"></button>
         <button class="photo_btn" id="apple_store"></button>
         <h2 class="head-sec"><span id="download_num"></span>Downloads</h1>
         </div>
@@ -1311,13 +1281,13 @@ body{
                 <h1>Serving in:</h1>
                 <ul>
                     <li>Jaipur</li>
-                    <li>City 2</li>
+                    <!--<li>City 2</li>
                     <li>City 3</li>
                     <li>City 4</li>
                     <li>City 5</li>
                     <li>City 6</li>
                     <li>City 7</li>
-                    <li>City 8</li>
+                    <li>City 8</li>-->
                 </ul>
             </div>
             <hr>
@@ -1332,12 +1302,13 @@ body{
             <div class="box">
                 <p>Follow Us</p>
                 <div class="icon_bar">
-                    <button class="icon_btn" id="insta" onclick="window.location.href = 'https://www.instagram.com/barbera_online_salon/';"></button>
-                    <button class="icon_btn" id="facebook"></button>
+                    <button class="icon_btn" id="insta" onclick="window.open('https://www.instagram.com/barbera_online_salon/','_blank')"></button>
+                    <button class="icon_btn" id="facebook" onclick="window.open('https://www.facebook.com/BarberaOnlineSalon/','_blank')"></button>
+                    <button class="icon_btn" id="linkedin" onclick="window.open('https://www.linkedin.com/company/barbera2021/','_blank')"></button>
+                   <!--
                     <button class="icon_btn" id="twitter"></button>
-                    <button class="icon_btn" id="linkedin"></button>
                     <button class="icon_btn" id="pintrest"></button>
-                    <button class="icon_btn" id="youtube"></button>
+                    <button class="icon_btn" id="youtube"></button>-->
                 </div>
             </div>
             <hr>
