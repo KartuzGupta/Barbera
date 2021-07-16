@@ -2,13 +2,16 @@
 Barbera
 -->
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>Barbera</title>
     <!--<link rel="stylesheet" href="style.css">-->
+    <!--<link rel="stylesheet" href="ham.css">-->
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-        /*CSS Reset*/
+    /*!
+         /*CSS Reset*/
 *{
     margin: 0px;
     padding: 0px;
@@ -17,10 +20,65 @@ Barbera
 /*    font-family: 'Montserrat', sans-serif;*/
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
      background-color: #a3a3a347;
    
 }
+/*New Navigation*/
+/*
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: lightgrey;
+  
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}*/
 /*CSS Variables*/
 :root{
     --navbar-height: 59px;
@@ -28,65 +86,67 @@ body{
 
 /*Navigation Bar*/
 
-#navbar{
-    position: fixed;
+.logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+.navbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100px;
-    z-index: 10;
+    position: sticky;
+    top:0;
+    cursor: pointer;
 }
 
-/*Navigation Bar : Logo and Image */
+.nav-list{
+    width: 70%; 
+    display: flex; 
+    align-items: center;
+}    
 
-#logo{
-    margin: 10px 10px;
-}
-
-#logo img{
-    height: 100px;
-    width: 100px;
-    margin: 5px 10px;
-}
-
-/*Navigation Bar :List Style*/
-
-#navbar::before{
-    content: "";
-    background-color: black;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top:0px;
-    left: 0px;
-    z-index: -1;
-    opacity: 40%;
-}
-
-#navbar ul{
-    display: flex;
-}
-
-#navbar ul li{
+.nav-list li{
     list-style: none;
+    padding: 20px 30px;
 }
 
-#navbar ul li a{
-    color: white;
-    display: block;
-    padding: 15px;
-    margin: auto;
-    border-radius: 30px;
+.nav-list li a{
     text-decoration: none;
-    font-size: 1.7rem;
+    color: white;
+    font-size: 20px;
 }
 
-#navbar ul li a:hover{
-    color: #E8F0F2;
-    font-size: 1.8rem;
+.nav-list li a:hover{ 
+    color: rgb(197, 194, 194);
 }
-
+.background{
+    background: black;
+    background-size: cover;
+    background-blend-mode: darken;
+    z-index: 2;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
 /*Section Home*/
 #home::before{
     content: "";
@@ -112,9 +172,9 @@ body{
 #home h1{
     color: white;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 5px;
-    margin-top: 65px;
+    margin-top: 10px;
 }
 
 #home p{
@@ -367,6 +427,8 @@ body{
 }
 #costumer_num{
     font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: auto;
 }
 /*Services*/
 
@@ -936,6 +998,38 @@ body{
     #ser .icon_text p{
         font-size: 1.2rem;
     }
+    /*Navigation*/
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+         border: 1px solid white;
+        transition: all 0.7s ease-out;
+    }
+   
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .burger{
+    display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .nav-list li a{
+        font-size: 1.5rem;
+    }
+    
+}
 }
 
 /*Phone and Tablet max-width:700px  , Navigation bar for smaller screens
@@ -951,22 +1045,30 @@ body{
 </head>    
 <html>
 <body>
-    
-    <nav id="navbar">
-        <div id="logo">
-            <img src="https://barbera.netlify.app/nikita.jpeg" alt="Barbera" width="150px">
-        </div>
-        <ul>
-            <li class="item"><a href="#">HOME</a></li>
-            <!--<li class="item"><a href="#">BOOK APPOINTMENT</a></li>-->
-            <li class="item"><a href="#">SERVICES</a></li>
-            <li class="item"><a href="#">SIGN IN</a></li>
-            <li class="item"><a href="#">TIPS</a></li>
-            <!--<li class="item"><a href="#">REGISTER AS A PROFFESIONAL</a></li>-->
-            <!--<li class="item"><a href="#">RATE US</a></li>-->
-            <li class="item"><a href="#">ABOUT US</a></li>
-            <li class="item"><a href="#">CONTACT US</a></li>
+    <!--
+    <div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#news">Services</a>
+  <a href="#contact">Contact Us</a>
+  <a href="#about">About Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+  </div>-->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="https://barbera.netlify.app/nikita.jpeg" alt="logo"></div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#feedback">Contact Us</a></li>
         </ul>
+        
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </nav>
     
     <section id="home">
@@ -1049,9 +1151,9 @@ body{
         <button class="bigbtn">TESTIMONIALS</button>
     </section>
     
-    <section id="number">
+    <section id="number" onmouseover="costumer_number()">
         <div class="num">
-           <p><span id="costumer_num"></span>+</p> <p>Happy and Satisfied Customers</p>
+           <span id="costumer_num"></span><p>Happy and Satisfied Customers</p>
         </div>
     </section>
     
@@ -1204,13 +1306,13 @@ body{
         </div>
     </section>
     
-    <section id="app">
+    <section id="app" onmouseover="download_number()">
         <div class="box">
         <h2 class="head-pri">BOOK FROM YOUR MOBILE</h1>
         <h2 class="head-sec">Download our App from Google Play Store and Apple Store.</h1>
         <button class="photo_btn" id="google_store" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.barbera.barberaconsumerapp&hl=en_IN&gl=US';"></button>
         <button class="photo_btn" id="apple_store"></button>
-        <h2 class="head-sec"><span id="download_num">0</span>+ Downloads</h1>
+        <h2 class="head-sec"><span id="download_num"></span>Downloads</h1>
         </div>
         <div class="box_move">
             <img id="move_1" src="https://image.winudf.com/v2/image1/Y29tLmJhcmJlcmEuYmFyYmVyYWNvbnN1bWVyYXBwX3NjcmVlbl8xXzE2MDM1MTcyOTRfMDY0/screen-1.jpg?fakeurl=1&type=.jpg" alt="">
@@ -1288,28 +1390,109 @@ body{
     </footer>
     <!--JavaScript-->
     <script>
+    //Navigation BAR  for mobiles and table
+    burger = document.querySelector('.burger')
+navbar = document.querySelector('.navbar')
+navList = document.querySelector('.nav-list')
+
+ 
+
+
+burger.addEventListener('click', ()=>{
+
+    navList.classList.toggle('v-class-resp');
+    navbar.classList.toggle('h-nav-resp');
+    
+})
+    
+   /*function isVisible($el) {
+    var winTop = $(window).scrollTop();
+    var winBottom = winTop + $(window).height();
+    var elTop = $el.offset().top;
+    var elBottom = elTop + $el.height();
+    return ((elBottom<= winBottom) && (elTop >= winTop));
+    }
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}*/
     //section : Numbers
+    function costumer_number()
+    {
+        /*var myElement = document.getElementById('my-element');
+        var bounding = myElement.getBoundingClientRect();
+
+       function elementInViewport() {
+
+       var bounding = myElement.getBoundingClientRect();
+
+      if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+
+        console.log('Element is in the viewport!');
+    } else {
+
+        console.log('Element is NOT in the viewport!');
+    }
+} */
             let costumer_num = document.getElementById("costumer_num");
             let i=0;
             let timer;
             function change_1(i)
             {
-                costumer_num.innerHTML = i;
+                costumer_num.innerHTML = `${i}+ `;
             }
-                for(i=0; i<=100; i++)
+            
+            /*if(isVisible($("#costumer_num"))==true)
+            {*/
+                for(i=0; i<=50; i++)
                 {
-                    timer =setTimeout(change_1, 5000+(10*i), 250*i);
+                    timer =setTimeout(change_1,(10*i), 100*i);
                 }
+            /*}    */
+               
+    }            
     //section : Numbers
+    function download_number()
+    {
             let download_num = document.getElementById("download_num");
             function change(i)
             {
-                download_num.innerHTML = i;
+                download_num.innerHTML = `${i}+ `;
             }
-            for(i=0; i<=200; i++)
+            
+            /*if(isVisible($("#download_num"))==true)
+            {*/
+            for(i=0; i<=50; i++)
             {
-                timer =setTimeout(change, 10000+(10*i), 250*i);
-            }    
+                timer =setTimeout(change, 500+(10*i), 20*i);
+            }
+            /*}*/
+    } 
+    /*
+    function isOnScreen(elem) {
+	// if the element doesn't exist, abort
+	if( elem.length == 0 ) {
+		return;
+	}
+	var $window = jQuery(window)
+	var viewport_top = $window.scrollTop()
+	var viewport_height = $window.height()
+	var viewport_bottom = viewport_top + viewport_height
+	var $elem = jQuery(elem)
+	var top = $elem.offset().top
+	var height = $elem.height()
+	var bottom = top + height
+
+	return (top >= viewport_top && top < viewport_bottom) ||
+	(bottom > viewport_top && bottom <= viewport_bottom) ||
+	(height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
+   }*/
+
+     
     </script>
 </body>
 </html>
