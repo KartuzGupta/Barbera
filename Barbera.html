@@ -3,6 +3,7 @@ Barbera
 -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 <title>Barbera</title>
     <!--<link rel="stylesheet" href="style.css">-->
     <!--<link rel="stylesheet" href="ham.css">-->
@@ -13,6 +14,7 @@ Barbera
     /*!
          /*CSS Reset*/
 *{
+    /*box-sizing: border-box;*/
     margin: 0px;
     padding: 0px;
     /*font-family: 'Bree Serif', serif;*/
@@ -110,7 +112,8 @@ body{
 #home::before{
     content: "";
     position: absolute;
-    background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;
+    /*background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;*/
+    background-color: white;
     height: 690px;
     width: 100%;
     z-index: -2;
@@ -146,12 +149,112 @@ body{
 }
 #home .btn{
     opacity: 80%;
-    background-color: black; 
+    background-color: black;
     color: white;
     z-index: 10;
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #home .btn:hover{
     opacity: 100%;
+}
+
+/*Home animation*/
+.mySlides {
+    height: 690px;
+    /* width: 100%; */
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+#home img {
+ height: 690px;
+ width: 1000px;
+ vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin-top: 16px;
+    width: 1000px;
+    height: 690px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 650px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  display: none;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 1100px) {
+    
+  .text {font-size: 11px}
+  .slideshow-container {
+    width: 981px;
+  }
+  .mySlides {
+    width: 981px;
+  }
+  #home img{
+    width: 981px;
+  }
+  
+    
 }
 /*Section Offers*/
 
@@ -169,7 +272,10 @@ body{
 }
 #offers h1{
     display: block;
-    margin: auto;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
     font-size: 2.3rem;
     color: #2B2B2B;
 }
@@ -833,9 +939,10 @@ body{
 
 /*Phone and Tablet max-width:1050px*/
 @media only screen and (max-width:1100px){
+    
     /*Section : Home*/
     #home{
-        height: 500px;
+        height: 690px;
     }
     
     /*Section: Footer*/
@@ -861,6 +968,7 @@ body{
         display: block;
         width: 100%;
     }
+    
     /*feedback*/
     #feedback .box{
         width: 60%;
@@ -876,10 +984,8 @@ body{
     #foot .formde{
         font-size: 1.3rem;
     }
+    
     /*section: Offers*/
-    /*#offers{
-        height: 600px;
-    }*/
     #offer h1{
         font-size: 2.5rem;
     }
@@ -901,6 +1007,7 @@ body{
         justify-content: center;
         align-content: center;
     }
+    
     /*section: SERVICES*/
     #ser{
         display: flex;
@@ -912,11 +1019,6 @@ body{
     #services{
         height: 1650px;
     } 
-    /*#ser .icon{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }*/
     #ser .box{
         display: flex;
         flex-direction: row;
@@ -936,6 +1038,7 @@ body{
     #ser .icon_text p{
         font-size: 1.2rem;
     }
+    
     /*Navigation*/
     .nav-list{
         flex-direction: column;
@@ -981,13 +1084,14 @@ body{
         z-index: 3;
     }
 }*/
+
     </style>
     
 </head>    
 <html>
 <body>
+    <!--Navigation Bar-->
     <nav class="navbar background h-nav-resp">
-        
         <ul class="nav-list v-class-resp">
             <div class="logo"><img src="https://barbera.netlify.app/nikita.jpeg" alt="logo"></div>
             <li><a href="#">Home</a></li>
@@ -1004,7 +1108,7 @@ body{
             
             
         </ul>
-        
+        <!--Side Option For small screens-->
         <div class="burger">
             <div class="line"></div>
             <div class="line"></div>
@@ -1012,14 +1116,58 @@ body{
         </div>
     </nav>
     
+<!--Home section-->    
     <section id="home">
+<!--Animation For home-->
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">
         <h1 class="head-pri">Welcome to BARBERA</h1>
         <p>Get Stylish - Anytime - Anywhere</p>
         <p>Beauty, Cosmetic & Personal Care.
-           Get Salon Services at home by expert professionals!</p>
+        Get Salon Services at home by expert professionals!</p>
         <button class="btn">BOOK APPOINTMENT</button>
-    </section>
+</div>
+  <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">
+        <h1 class="head-pri">Welcome to BARBERA</h1>
+        <p>Get Stylish - Anytime - Anywhere</p>
+        <p>Beauty, Cosmetic & Personal Care.
+        Get Salon Services at home by expert professionals!</p>
+        <button class="btn">BOOK APPOINTMENT</button>
+</div>
+  <img src="https://st.depositphotos.com/1428083/2946/i/600/depositphotos_29460297-stock-photo-bird-cage.jpg">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">
+        <h1 class="head-pri">Welcome to BARBERA</h1>
+        <p>Get Stylish - Anytime - Anywhere</p>
+        <p>Beauty, Cosmetic & Personal Care.
+        Get Salon Services at home by expert professionals!</p>
+        <button class="btn">BOOK APPOINTMENT</button>
+
+  </div>
+  <img src="https://st2.depositphotos.com/1428083/12424/i/950/depositphotos_124249774-stock-photo-free-birds-on-wire.jpg">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
     
+</section>
+    
+    <!--Offers-->
     <section id="offers">
         <div class="heading_box">
         <h1 class="head-pri" width="100%" align="center">OFFERS FOR YOU</h1>
@@ -1067,6 +1215,7 @@ body{
         </div>
     </section>
     
+    <!--Why Barbera-->
     <section id="choose">
         <h1 class="head-pri" width="100%" align="center">WHY BARBERA??</h1>
         <div id="chooseus">
@@ -1088,23 +1237,26 @@ body{
         </div>
     </section>
     
+    <!--Testimonial Section-->
     <section id="cost-rev">
         <button class="bigbtn">TESTIMONIALS</button>
     </section>
     
+    <!--Number of satisfied costumers-->
     <section id="number" onmouseover="costumer_number()">
         <div class="num">
            <span id="costumer_num"></span><p>Happy and Satisfied Customers</p>
         </div>
     </section>
     
+    <!--Services Section-->
     <section id="services">
         <div class="heading_box">
         <h1 class="head-pri">SERVICES</h1>
         <hr>
         </div>
         <div id="ser">
-            
+            <!--Male-->
         <div class="box">
             <div class="main">
 
@@ -1140,6 +1292,7 @@ body{
             </div>
         </div>    
 <hr>
+<!--Female-->
         <div class="box">
             <div class="main">
             <button class="medbtn" id="btn_female">WOMEN</button>
@@ -1189,6 +1342,7 @@ body{
             </div>
         </div>
 <hr>        
+       <!--Wedding PACKAGES-->
         <div class="box">
             <div class="main">
             <button class="medbtn" id="btn_wedding">WEDDING PACKAGES</button>
@@ -1221,6 +1375,7 @@ body{
         </div>
     </section>
     
+    <!--Number of Download-->
     <section id="app" onmouseover="download_number()">
         <div class="box">
         <h2 class="head-pri">BOOK FROM YOUR MOBILE</h1>
@@ -1235,6 +1390,7 @@ body{
         </div>
     </section>
     
+    <!--Feedback Form-->
     <section id="feedback">
         <div class="box">
                 <h1>Any Suggestions or Queries...Just Drop a Message!!</h1>
@@ -1247,6 +1403,7 @@ body{
         </div>
     </section>
     
+    <!--Footer section-->
     <footer id="footer">
         <div id="foot">
             <div class="box">
@@ -1296,20 +1453,42 @@ body{
         </div>
          <p>&copy; Barbera 2021 </p>
     </footer>
+    
     <!--JavaScript-->
     <script>
-    //Navigation BAR  for mobiles and table
-    burger = document.querySelector('.burger')
-navbar = document.querySelector('.navbar')
-navList = document.querySelector('.nav-list')
+    
+    //Home section photos animation
+    var slideIndex = 0;
+    showSlides();
 
-burger.addEventListener('click', ()=>{
+    function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+ 
+    //Navigation Bar for mobiles and table
+    burger = document.querySelector('.burger')
+    navbar = document.querySelector('.navbar') 
+    navList = document.querySelector('.nav-list')
+
+    burger.addEventListener('click', ()=>{
     navList.classList.toggle('v-class-resp');
     navbar.classList.toggle('h-nav-resp');
+    })
     
-})
-    
-    //section : Numbers
+    //section : Number of Customers
     function costumer_number()
     {
             let costumer_num = document.getElementById("costumer_num");
@@ -1324,8 +1503,9 @@ burger.addEventListener('click', ()=>{
                     timer =setTimeout(change_1,(10*i), 100*i);
                 }
 
-    }            
-    //section : Numbers
+    }       
+    
+    //section :number of downloads
     function download_number()
     {
             let download_num = document.getElementById("download_num");
@@ -1339,9 +1519,6 @@ burger.addEventListener('click', ()=>{
                 timer =setTimeout(change, 500+(10*i), 20*i);
             }
     } 
-
-
-     
     </script>
 </body>
 </html>
