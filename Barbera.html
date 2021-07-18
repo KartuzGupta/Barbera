@@ -296,64 +296,65 @@ body{
     align-content: center;
 }
 /*animation :Button Offers*/
-#offer .upper{
-    /*border: 2px solid red;*/
+/*#offer .upper{
+    border: 2px solid cyan;
     height: 450px;
     width: 300px;
     overflow: hidden;
     margin: 25px;
     background-color: none;
-}
+}*/
 #offer .box{
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 900px;
+    height: 500px;
     border-radius: 15px;
     background-color: none;
-    
-    /*border: 1px solid green;*/
+    margin-right: 10px;
+    margin-left: 10px;
+    /*border: 10px solid green;*/
 }
 #offer .btn{
     display: block;
     align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 5px;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #bebcbc;
     width: 300px;
-    height: 450px;
-    color: white;
+    height: 100px;
+    color: black;
     /*border: 2px solid black;*/
 }
-#offer .box:hover{
-    position: relative;
-    animation: button;
-    animation-duration: 0.4s;
-    animation-fill-mode: forwards;
+#offer .box:hover .box2{
+  height: 100px;
+  border-radius:10px;
 }
-@keyframes button{
-    0%{top:-0px;}
-    100%{top: -450px;}
-}
+
 #offer .box1{
     /*border: 2px solid black;*/
     display: block;
     margin: auto;
-    height: 450px;
+    height: 500px;
     width: 300px;
     border-radius: 15px;
     background-color: #DDDDDD;
 }
 #offer .box2{
-    /*border: 2px solid cyan;*/
-    height: 450px;
-    width: 300px;
-    border-radius: 15px;
-    background-color: #D6D2C4;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  width: 300px;
+  height: 0px;
+  transition: .5s ease;
+  /*border: 1px solid red;*/
 }
-
+#offer h1 a{
+    display: block;
+    margin: auto;
+}
 #offer .box img{
     height: 100px;
     display: block;
@@ -553,6 +554,7 @@ body{
 #ser .main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     /*margin: 40px;*/
 }
 #ser .main p{
@@ -560,7 +562,9 @@ body{
     justify-content: center;
     font-size: 2rem;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 /*
 #ser .box img{
     display: block;
@@ -586,6 +590,15 @@ body{
     border-radius: 10px;
     border: 1px white;
     box-shadow: 2px 2px 2px 2px #8080801a;
+}
+#ser .box br{
+    display: none;
+}
+@media only screen and (max-width: 1200px)
+{
+    #ser .container br{
+        display: block;
+    }
 }
 /*Big Icon Photos*/
 #btn_male{
@@ -1008,12 +1021,17 @@ body{
     
     #offer .box1{
         width: 285px;
+        height: 530px;
     }
     #offer .box2{
         width: 285px;
     }
     #offer  .upper{
         margin: 5px;
+        height: 530px;
+    }
+    #offer .box{
+        height: 530px;
     }
     /*section: Download The App*/
     #app::before{
@@ -1053,6 +1071,9 @@ body{
     }
     #ser .icon_text p{
         font-size: 1.2rem;
+    }
+    #ser .main{
+        margin: 50px;
     }
     
     /*Navigation*/
@@ -1195,12 +1216,12 @@ body{
             <div class="box">
                 <div class="box1">
                 <img src="https://us.123rf.com/450wm/kakigori/kakigori1605/kakigori160500012/56673409-beautiful-young-bride-and-groom-couple-holding-hands-on-wedding-day.jpg?ver=6" alt="">
-                <h1 class="head-sec" align="center">30% Discount</h1>
+                <h1 class="head-sec" align="center"><a>30%</a><a>Discount</a></h1>
                 <p align="center">Earn upto 30% Discount on Wedding Packages.</p>
                 <p align="center">*T&C Apply</p>
                 </div>
                 <div class="box2">
-                <button class="btn" >FIND MORE</button>
+                <button class="btn">FIND MORE</button>
                 </div>
             </div>
             </div>
@@ -1213,7 +1234,7 @@ body{
                 <p align="center">*T&C Apply</p>
                 </div>
                 <div class="box2">
-                <button class="btn">FIND MORE</button>
+                    <button class="btn">FIND MORE</button>
                 </div>
             </div>
             </div>
@@ -1275,8 +1296,8 @@ body{
         <div id="ser">
             <!--Male-->
         <div class="box">
-            <div class="container">
             <div class="main">
+            <div class="container">
             <button class="medbtn" id="btn_male"></button>
             <p>MEN</p>
             </div>
@@ -1368,8 +1389,7 @@ body{
             <div class="main">
             <div class="container">
             <button class="medbtn" id="btn_wedding"></button>
-            <p>WEDDING</p>
-            <p>PACKAGES</p>
+            <p>WEDDING<br> PACKAGES</p>
             </div>
             </div>
             <div class="icon">
