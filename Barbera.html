@@ -115,13 +115,23 @@ body{
     height: 4px;
     margin: 5px 3px;
 }
+.nav_icon img{
+    width: 30px;
+    height: 30px;
+}
+.nav_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
 /*Section Home*/
 #home::before{
     content: "";
     position: absolute;
     /*background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;*/
     background-color: #e5e5e5;
-    height: 690px;
+    height: 800px;
     width: 100%;
     z-index: -2;
     opacity: 1;
@@ -131,11 +141,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3px 100px;
-    margin: 0px 100px;
     flex-direction: column;
     text-align: center;
-    height: 690px;
+    height: 800px;
 }
 
 #home h1{
@@ -153,6 +161,7 @@ body{
     padding: 10px;
     margin-bottom: 10px;
     color: white;
+    display: block;
 }
 #home .btn{
     opacity: 80%;
@@ -170,7 +179,7 @@ body{
 
 /*Home animation*/
 .mySlides {
-    height: 690px;
+    height: 800px;
     /* width: 100%; */
     /* margin: 10px; */
     display: flex;
@@ -180,8 +189,8 @@ body{
     
 }
 #home img {
- height: 690px;
- width: 1000px;
+ height: 800px;
+ width: 100%;
  vertical-align: middle;
  filter: brightness(0.47);
 
@@ -191,12 +200,12 @@ body{
 .slideshow-container {
     position: relative;
     margin-top: 16px;
-    width: 1000px;
-    height: 690px;
+    width: 100%;
+    height: 800px;
 }
 
 /* Caption text */
-.text {
+/*.text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -204,7 +213,7 @@ body{
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
+}*/
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -217,8 +226,10 @@ body{
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    height: 650px;
+    height: 800px;
     z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* The dots/bullets/indicators */
@@ -254,13 +265,13 @@ body{
     
   .text {font-size: 11px}
   .slideshow-container {
-    width: 981px;
+    width: 100%;
   }
   .mySlides {
-    width: 981px;
+    width: 100%;
   }
   #home img{
-    width: 981px;
+    width: 100%;
   }
   
     
@@ -270,7 +281,7 @@ body{
 #offers{
     display: flex;
     flex-direction: column;
-    height: 690px;
+    height: 800px;
     background-color: #EFEFEF;
    /* border: 1px solid blue;*/
 }
@@ -971,7 +982,7 @@ body{
     
     /*Section : Home*/
     #home{
-        height: 690px;
+        height: 800px;
     }
     
     /*Section: Footer*/
@@ -1132,7 +1143,10 @@ body{
     <nav class="navbar background h-nav-resp">
         <ul class="nav-list v-class-resp">
             <!--<div class="logo"><img src="https://barbera.netlify.app/nikita.jpeg" alt="logo"></div>-->
+            <div class="nav_icon">
+            <img src="https://us.123rf.com/450wm/fokaspokas/fokaspokas1804/fokaspokas180400063/98532451-a-house-icon-on-white-icon-on-black-background-.jpg?ver=6" alt="Home">
             <li><a href="#">Home</a></li>
+            </div>
             <hr>
             <li><a href="#services">Services</a></li>
             <hr>
