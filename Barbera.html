@@ -994,6 +994,43 @@ body{
 }
 
 /*Phone and Tablet max-width:1050px*/
+@media only screen and (max-width:1200px)
+{
+    /*Navigation*/
+    .nav-list{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .navbar{
+        height: 510px;
+        flex-direction: column;
+         border: 1px solid white;
+        transition: all 0.7s ease-out;
+    }
+    .burger{
+    display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .nav-list li a{
+        font-size: 1.5rem;
+    }
+    .navbar a:hover{
+        font-size: 1.6rem;
+    }
+    
+    .navbar hr{
+        display: block;
+        width: 70%;
+    }
+}
 @media only screen and (max-width:1100px){
     
     /*Section : Home*/
@@ -1102,43 +1139,8 @@ body{
     #ser .main{
         margin: 50px;
     }
-    
-    /*Navigation*/
-    .nav-list{
-        flex-direction: column;
-        margin: 0px;
-    }
-    .navbar{
-        height: 510px;
-        flex-direction: column;
-         border: 1px solid white;
-        transition: all 0.7s ease-out;
-    }
-    .burger{
-    display: block;
-    }
-    .h-nav-resp{
-        height: 72px;
-    }
-    .v-class-resp{
-        opacity: 0;
-    }
-    .section{
-        flex-direction: column-reverse;
-    }
-    .nav-list li a{
-        font-size: 1.5rem;
-    }
-    .navbar a:hover{
-        font-size: 1.6rem;
-    }
-    
-    .navbar hr{
-        display: block;
-        width: 70%;
-    }
 }
-}
+
 
 /*Phone and Tablet max-width:700px  , Navigation bar for smaller screens
 @media only screen and (max-width: 700px)
