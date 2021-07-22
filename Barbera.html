@@ -27,13 +27,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-     background-color: #a3a3a347;
-   
-}
-
-/*CSS Variables*/
-:root{
-    --navbar-height: 59px;
+    background-color: #a3a3a347;
 }
 
 /*Navigation Bar*/
@@ -157,11 +151,11 @@ body{
     }
 }
 /*Section Home*/
-#home::before{
+/*#home::before{
     content: "";
     position: absolute;
     /*background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;*/
-    background-color: #e5e5e5;
+    /*background-color: #e5e5e5;
     height: 800px;
     width: 100%;
     z-index: -2;
@@ -177,7 +171,7 @@ body{
     height: 800px;
 }
 
-#home h1{
+#home h5{
     color: white;
     text-align: center;
     padding-top: 20px;
@@ -207,34 +201,34 @@ body{
 }
 #home .btn:hover{
     opacity: 100%;
-}
+}*/
 
 /*Home animation*/
-.mySlides {
+/*.mySlides {
     height: 800px;
     /* width: 100%; */
     /* margin: 10px; */
-    display: flex;
+   /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     
-}
-#home img {
- height: 800px;
+}*/
+/*#home img {
+ height: 690px;
  width: 100%;
  vertical-align: middle;
  filter: brightness(0.47);
 
-}
+}/*
 
 /* Slideshow container */
-.slideshow-container {
+/*.slideshow-container {
     position: relative;
     margin-top: 16px;
     width: 100%;
     height: 800px;
-}
+}*/
 
 /* Caption text */
 /*.text {
@@ -248,7 +242,7 @@ body{
 }*/
 
 /* Number text (1/3 etc) */
-.numbertext {
+/*.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -262,20 +256,20 @@ body{
     z-index: 1;
     margin-left: 10%;
     margin-right: 10%;
-}
+}*/
 
 /* The dots/bullets/indicators */
-.dot {
+/*.dot {
   display: none;
   transition: background-color 0.6s ease;
 }
 
 .active {
   background-color: #717171;
-}
+}*/
 
 /* Fading animation */
-.fade {
+/*.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -290,10 +284,10 @@ body{
 @keyframes fade {
   from {opacity: .6} 
   to {opacity: 1}
-}
+}*/
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 1100px) {
+/*@media only screen and (max-width: 1100px) {
     
   .text {font-size: 11px}
   .slideshow-container {
@@ -305,9 +299,23 @@ body{
   #home img{
     width: 100%;
   }
-  
-    
+}*/
+
+/*Padmaja Code for animation*/
+#home img{
+    height: 800px;
+    filter: brightness(50%);
 }
+#home p{
+    font-size: 2rem;    
+}
+#home h5{
+    font-size: 3rem;
+}
+#home .carousel-caption{
+    margin-bottom: 10%;
+}
+
 /*Section Offers*/
 
 #offers{
@@ -1296,8 +1304,9 @@ hr{
     
 </section>
    --> 
-   <!-- Padmjaa Code for slider-->
-   
+   <!-- Padmja Code for slider-->
+   <!--Section :Home-->
+   <section id="home">
    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -1306,24 +1315,33 @@ hr{
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://thumbs.dreamstime.com/b/woman-getting-hair-shampooed-salon-applying-shampoo-massaging-customer-having-her-washed-hairdressing-96813891.jpg" class="d-block w-100" alt="...">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h5 class="head-pri">Welcome to BARBERA</h5>
+              <p class="head-sec">Get Stylish - Anytime - Anywhere</p>
+              <p>Get Salon Services at home by expert professionals!</p>
+              <p>Men's Salon</p>
+              <button class="btn">BOOK APPOINTMENT</button>
             </div>
           </div>
           <div class="carousel-item">
             <img src="https://thumbs.dreamstime.com/b/woman-getting-hair-shampooed-salon-applying-shampoo-massaging-customer-having-her-washed-hairdressing-96813891.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5 class="head-pri">Welcome to BARBERA</h5>
+              <p class="head-sec">Get Stylish - Anytime - Anywhere</p>
+              <p>Get Salon Services at home by expert professionals!</p>
+              <p>Women's Salon</p>
+              <button class="btn">BOOK APPOINTMENT</button>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://thumbs.dreamstime.com/b/woman-getting-hair-shampooed-salon-applying-shampoo-massaging-customer-having-her-washed-hairdressing-96813891.jpg" class="d-block w-100" alt="...">
+            <img src="https://i0.wp.com/detechter.com/wp-content/uploads/2017/07/Hindu-Wedding-India.jpg?fit=886%2C535&ssl=1" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5 class="head-pri">Welcome to BARBERA</h5>
+              <p class="head-sec">Get Stylish - Anytime - Anywhere</p>
+              <p>Get Salon Services at home by expert professionals!</p>
+              <p>Wedding Packages</p>
+              <button class="btn">BOOK APPOINTMENT</button>
             </div>
           </div>
         </div>
@@ -1335,7 +1353,8 @@ hr{
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
+    </section>
     <!--Offers-->
     <section id="offers">
         <div class="heading_box">
@@ -1409,6 +1428,7 @@ hr{
     <!--Testimonial Section-->
     <section id="cost-rev">
         <button class="bigbtn">TESTIMONIALS</button>
+        
     </section>
     
     <!--Number of satisfied costumers-->
