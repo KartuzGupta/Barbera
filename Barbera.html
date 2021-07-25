@@ -116,6 +116,7 @@ body{
     height: 4px;
     margin: 5px 3px;
 }
+
 .nav_icon img{
     width: 27px;
     height: 27px;
@@ -1213,6 +1214,7 @@ body{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    margin-bottom: 0px;
 }
 #foot .box h1{
     font-size: 1rem;
@@ -1304,9 +1306,30 @@ body{
          border: 1px solid white;
         transition: all 0.7s ease-out;
     }
-    .burger{
-    display: block;
+    .burger {
+    display: inline-block;
+    cursor: pointer;
     }
+
+#bar1, #bar2, #bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change #bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change #bar2 {opacity: 0;}
+
+.change #bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
     .h-nav-resp{
         height: 72px;
     }
@@ -1509,10 +1532,10 @@ hr{
             
         </ul>
         <!--Side Option For small screens-->
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+        <div class="burger" onclick="myFunction(this)">
+            <div class="line" id="bar1"></div>
+            <div class="line" id="bar2"></div>
+            <div class="line" id="bar3"></div>
         </div>
            <div class="nav_icon" id="login">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xvPVwE-_sU3RrWJrI_88gIAysvHpFqaZaqmp22hCDwXFBRHqqRQQ0Mi17qR1JuBr1TQ&usqp=CAU" alt="SignIn">
@@ -1695,7 +1718,7 @@ hr{
     <!--Number of satisfied costumers-->
     <section id="number" onmouseover="costumer_number()">
         <div class="num">
-           <span id="costumer_num"></span><p>Happy and Satisfied Customers</p>
+           <span id="costumer_num">&nbsp;&nbsp;</span><p>Happy and Satisfied Customers</p>
         </div>
     </section>
     
@@ -2010,6 +2033,7 @@ hr{
     <!--JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
+    
     //Home section photos animation
     /*var slideIndex = 0;
     showSlides();
@@ -2030,7 +2054,11 @@ hr{
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2000); // Change image every 2 seconds
     }*/
- 
+    
+    //To change Burger icon to cross
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
     //Navigation Bar for mobiles and table
     burger = document.querySelector('.burger')
     navbar = document.querySelector('.navbar') 
@@ -2055,7 +2083,6 @@ hr{
                 {
                     timer =setTimeout(change_1,(10*i), 100*i);
                 }
-
     }       
     
     //section :number of downloads
