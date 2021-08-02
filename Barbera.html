@@ -105,8 +105,8 @@ body{
     display: none;
     position: absolute;
     cursor: pointer;
-    right: 5%;
-    top:15px;
+    right: 55px;
+    top:25px;
 }
 .line{
     width: 33px;
@@ -439,24 +439,24 @@ body{
     margin-left: 10px;
     /*border: 10px solid green;*/
 }
-#offer .btn{
+#offer .btn_offers{
     display: block;
     align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 5px;
     margin: auto;
-    border-radius: 10px;
+ /*   border-radius: 10px;*/
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     background-color: #bebcbc;
     width: 300px;
     height: 100px;
     color: black;
     font-family: 'Montserrat', sans-serif;
+    border:none;
+
 
     /*border: 2px solid black;*/
-}
-#offer .box:hover .box2{
-  height: 100px;
-  border-radius:10px;
 }
 
 #offer .box1{
@@ -475,6 +475,10 @@ body{
   width: 300px;
   height: 0px;
   transition: .5s ease;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border:none;
   /*border: 1px solid red;*/
 }
 #offer h1 a{
@@ -495,7 +499,17 @@ body{
     font-size: 1.5rem;
     color: #614b4b;
 }
+#offer .box:hover .box2{
+  height: 100px;
+  border-radius:10px;
+  border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+#offer .box:hover .box1{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 
+}
 /*Section: Why Choose Us*/
 
 #choose::before{
@@ -563,7 +577,7 @@ body{
 
 #choose .head-pri{
     font-family: 'Montserrat', sans-serif;
-    padding-top: 30px; 
+    padding-top: 50px; 
     color: #E8F0F2; 
 }
 #choose .bigbtn{
@@ -754,13 +768,13 @@ body{
 }
 #btn_wedding{
     background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.4&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_CeKdoA0S_KUIAzwAhJQag2bDuRAQv-kvJX9oP7yqLTUnI7U8jwz67zdxVWVQhF5PwiaKdmbwOTpVpy4E6vScR8chSIHBykdLUUCXOFpTsVdnb8fz3lvAnnxU&disp=emb&realattid=ii_krlo4e793') no-repeat center center/cover;
+    background-size: contain;
+    background-color: #dcb9bf;
 }
 #ser .medbtn:hover{
     box-shadow: 3px 3px 3px 3px #8080801a;
-    background-color: #8080801a;
     font-size: 2.1rem;
     border: 1px white;
-    color: #2c0e0e;
 }
 #ser .icon_text{
     display: flex;
@@ -818,9 +832,12 @@ body{
 /*WEDDING*/
 #wed_1{
     background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.4&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_CeKdoA0S_KUIAzwAhJQag2bDuRAQv-kvJX9oP7yqLTUnI7U8jwz67zdxVWVQhF5PwiaKdmbwOTpVpy4E6vScR8chSIHBykdLUUCXOFpTsVdnb8fz3lvAnnxU&disp=emb&realattid=ii_krlo4e793') no-repeat center center/cover;
+    background-size: contain;
+    background-color: #dcb9bf;
 }
 #wed_2{
     background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.1&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_SjrsZlGcg47kcls8Dk9a3rLZMz3oj7A6AJywS2I8PD7DWAKBJt3G77pfKRQm7xDeQDjNFvmxKMnNrK9jsTcsNnnkBBId-elWObbCW6axpIC17_mePcJTpeRo&disp=emb&realattid=ii_krlo3zfl0') no-repeat center center/cover;
+    background-size: contain;
 }
 #wed_3{
     background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.3&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ9cRMpSMp_A-8rhE4OJsHrVgpao4qB8vZQ3lzlime9sSLVuWKMH4YogfUNZcblQwTlPfr96aA5Ht1EuVNBqpwOlvNykw4iV73HOzXKja_-AjfWLOIWh-hTgQDI&disp=emb&realattid=ii_krlo47ml2') no-repeat center center/cover;
@@ -1179,6 +1196,7 @@ background:#fcfcfc;
     padding: 10px;
    justify-content: center;
     align-content: center;
+    width: 100%;
 }
 #app .photo_btn{
     display: block;
@@ -1206,6 +1224,7 @@ background:#fcfcfc;
 #app h2{
     color: #393E46;
     font-family: 'Montserrat', serif;
+    text-align: center;
     /*font-family: 'Roboto Slab', serif;*/
 }
 /*Phone animation*/
@@ -1259,6 +1278,7 @@ background:#fcfcfc;
     margin-left: 100px;
 
 }
+
 /*Moving Store*/
 #app .box_move{
     display: flex;
@@ -1492,6 +1512,7 @@ background:#fcfcfc;
     .nav-list{
         flex-direction: column;
         margin: 0px;
+        margin-top: 50px;
     }
     .navbar{
         height: 700px;
@@ -1524,7 +1545,7 @@ background:#fcfcfc;
   transform: rotate(45deg) translate(-8px, -8px);
 }
     .h-nav-resp{
-        height: 72px;
+        height: 100px;
     }
     .v-class-resp{
         opacity: 0;
@@ -1552,9 +1573,13 @@ background:#fcfcfc;
     .current{
         text-decoration: none;
         background-color: #626262;
+        margin: 0px;
     }
     .nav_icon{
         width: 70%;
+    }
+    .logo{
+        top: 22px;
     }
 }
 hr{
@@ -1891,7 +1916,7 @@ hr{
                 <p align="center">*T&C Apply</p>
                 </div>
                 <div class="box2">
-                <button class="btn">FIND MORE</button>
+                <button class="btn_offers">FIND MORE</button>
                 </div>
             </div>
             </div>
@@ -1904,7 +1929,7 @@ hr{
                 <p align="center">*T&C Apply</p>
                 </div>
                 <div class="box2">
-                    <button class="btn">FIND MORE</button>
+                    <button class="btn_offers">FIND MORE</button>
                 </div>
             </div>
             </div>
@@ -1917,7 +1942,7 @@ hr{
                 <p align="center">*T&C Apply</p>
                 </div>
                 <div class="box2">
-                <button class="btn" onclick="window.location.href = 'https://fonts.google.com/';">FIND MORE</button>
+                <button class="btn_offers" onclick="window.location.href = 'https://fonts.google.com/';">FIND MORE</button>
                 </div>
             </div>
         </div>
@@ -2204,9 +2229,9 @@ hr{
     <section id="app" onmouseover="download_number()">
         <div class="box">
         <h2 class="head-pri">BOOK FROM YOUR MOBILE</h1>
-        <h2 class="head-sec">Download our App from Google Play Store and Apple Store.</h1>
+        <h2 class="head-sec">Download our App from Google Play Store.</h1>
+        
         <button class="photo_btn" id="google_store" onclick="window.open('https://play.google.com/store/apps/details?id=com.barbera.barberaconsumerapp&hl=en_IN&gl=US','_blank')"></button>
-        <button class="photo_btn" id="apple_store"></button>
         <h2 class="head-sec"><span id="download_num"></span>Downloads</h1>
         </div>
         <!--Previous animation-->
