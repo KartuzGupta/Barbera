@@ -72,10 +72,7 @@ body{
     height: 100%;
     width: 100%; 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
-    margin-left: -15%;
+    margin-left: 8.4%;
 }    
 
 .nav-list li{
@@ -116,8 +113,8 @@ body{
 }
 
 .nav_icon img{
-    width: 27px;
-    height: 27px;
+    width: 20px;
+    height: 20px;
     margin: 10px;
 }
 .nav_icon{
@@ -174,18 +171,11 @@ body{
     .nav_icon{
         margin: 2% 1%;
     }
-    .nav-list{
-        margin-left: -12%;
-    }
 }
 @media only screen and (max-width:1150px)
 {
     .nav_icon{
         margin: 2% 0.7%;
-    }
-    
-    .nav-list{
-        margin-left: -10%;
     }
 }
 /*Section Home*/
@@ -518,7 +508,7 @@ body{
     background: url('https://images.unsplash.com/photo-1585314062604-1a357de8b000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;
     z-index: -3;
     opacity: 90%;
-    height: 650px;
+    height: 700px;
     width: 100%;
 }
 #choose{
@@ -637,7 +627,6 @@ body{
     align-content: center;
     margin: 50px;
     font-size: 2rem; 
-    margin-bottom: 130px;
 }
 #number .num{
     display: flex;
@@ -767,9 +756,8 @@ body{
     background : url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.15&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-f3BB1XqyOGALQKDizJkBXLNh9EEuUOxFM_51e_yy5z7Jy15roUC10ts5_vbnPsXjrE912olcx8ghkWZs_Cq6peRTzAUkTIW7zncwVNHM6Thbwro8HdS6qJxk&disp=emb&realattid=ii_krlo68b515') no-repeat center center/cover;
 }
 #btn_wedding{
-    background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.4&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_CeKdoA0S_KUIAzwAhJQag2bDuRAQv-kvJX9oP7yqLTUnI7U8jwz67zdxVWVQhF5PwiaKdmbwOTpVpy4E6vScR8chSIHBykdLUUCXOFpTsVdnb8fz3lvAnnxU&disp=emb&realattid=ii_krlo4e793') no-repeat center center/cover;
-    background-size: contain;
-    background-color: #dcb9bf;
+    background: url('https://i0.wp.com/detechter.com/wp-content/uploads/2017/07/Hindu-Wedding-India.jpg?fit=886%2C535&ssl=1') no-repeat center center/cover;
+    
 }
 #ser .medbtn:hover{
     box-shadow: 3px 3px 3px 3px #8080801a;
@@ -1511,6 +1499,8 @@ background:#fcfcfc;
     /*Navigation*/
     .nav-list{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0px;
         margin-top: 50px;
     }
@@ -1722,7 +1712,6 @@ hr{
     /*Numbers*/
     #number{
         margin: 15px;
-        margin-bottom: 70px;
     }
     /*Gallery*/
     #gallery .slider{
@@ -1734,44 +1723,60 @@ hr{
         height: 430px;
     }
 }
+/*back to top button*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background: url('https://ps.w.org/ar-back-to-top/assets/icon-256x256.jpg?rev=2022521') no-repeat center center/cover;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  z-index: 100;
+}
     </style>
 
 </head>    
 
 <body>
+    <!--Back To top-->
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
    <a href="home.html"><img src="https://barbera.netlify.app/nikita.jpeg" alt="logo" class="logo"></a> 
     <!--Navigation Bar-->
     <nav class="navbar background h-nav-resp">
         <ul class="nav-list v-class-resp">
             <!--<div class="logo"><img src="https://barbera.netlify.app/nikita.jpeg" alt="logo"></div>-->
             <div class="nav_icon current">
-            <img src="https://us.123rf.com/450wm/fokaspokas/fokaspokas1804/fokaspokas180400063/98532451-a-house-icon-on-white-icon-on-black-background-.jpg?ver=6" alt="Home" id="home_icon">
+           <!-- <img src="https://us.123rf.com/450wm/fokaspokas/fokaspokas1804/fokaspokas180400063/98532451-a-house-icon-on-white-icon-on-black-background-.jpg?ver=6" alt="Home" id="home_icon">-->
             <li><a href="home.html">Home</a></li>
             </div>
             <hr>
             <div class="nav_icon">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfglX2FUbxIF11BZiecgectkGhkjPsr4WFu2lUPEtYTIXt-Iq6uxultTxlyUZfl-SUHPY&usqp=CAU" alt="Services" id="services_icon">
+            <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfglX2FUbxIF11BZiecgectkGhkjPsr4WFu2lUPEtYTIXt-Iq6uxultTxlyUZfl-SUHPY&usqp=CAU" alt="Services" id="services_icon">-->
             <li><a href="#services">Services</a></li>
             </div>
             <hr>
             
             <div class="nav_icon">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8sksWlhY2C3peMqclAzuHm4z0-_kv7IR7rQ&usqp=CAU" alt="AboutUs" id="about_icon">
-            <li><a href="index.html">About Us</a></li>
+            <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8sksWlhY2C3peMqclAzuHm4z0-_kv7IR7rQ&usqp=CAU" alt="AboutUs" id="about_icon">-->
+            <li><a href="about.html">About Us</a></li>
             </div>
             <hr>
             <div class="nav_icon">
-            <img src="https://i.pinimg.com/originals/22/52/5e/22525e1af533b224bd2314e1126ead4f.jpg" alt="Contact" id="contact_icon">
-            <li><a href="#contact">Contact Us</a></li>
+            <!-- <img src="https://i.pinimg.com/originals/22/52/5e/22525e1af533b224bd2314e1126ead4f.jpg" alt="Contact" id="contact_icon">-->
+            <li><a href="#contact">Contact Us</a></li> 
             </div>
             <hr>
             <div class="nav_icon">
-            <img src="https://i.pinimg.com/originals/db/9c/66/db9c669ece4c0168bc0fc2076960a3b8.png" alt="Tips" id="tips_icon">
+            <!-- <img src="https://i.pinimg.com/originals/db/9c/66/db9c669ece4c0168bc0fc2076960a3b8.png" alt="Tips" id="tips_icon" style="margin-right: 4px;"> -->
             <li><a href="#">Tips</a></li>
             </div>
             <hr>
             <div class="nav_icon">
-            <img src="https://thumbs.dreamstime.com/b/shopping-icon-shopping-cart-icon-dark-background-simple-vector-icon-shopping-icon-shopping-cart-icon-dark-background-116659167.jpg" alt="Cart" id="cart_icon">
+            <!-- <img src="https://thumbs.dreamstime.com/b/shopping-icon-shopping-cart-icon-dark-background-simple-vector-icon-shopping-icon-shopping-cart-icon-dark-background-116659167.jpg" alt="Cart" id="cart_icon" style="margin-right: 4px;"> -->
             <li><a href="#">Cart</a></li>
             </div>
             <hr>
@@ -1781,7 +1786,7 @@ hr{
             </div>
             <hr>-->
             <div class="nav_icon" id="sign">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xvPVwE-_sU3RrWJrI_88gIAysvHpFqaZaqmp22hCDwXFBRHqqRQQ0Mi17qR1JuBr1TQ&usqp=CAU" alt="SignIn" class="sign_icon">
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xvPVwE-_sU3RrWJrI_88gIAysvHpFqaZaqmp22hCDwXFBRHqqRQQ0Mi17qR1JuBr1TQ&usqp=CAU" alt="SignIn" class="sign_icon"> -->
             <li><a href="#">Sign Up</a></li>
             </div>
             
@@ -2646,5 +2651,33 @@ function scrollFunction() {
   }
 }
 </script>-->
+<!--back to top-->
+<script>
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
