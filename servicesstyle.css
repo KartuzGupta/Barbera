@@ -231,10 +231,12 @@ body{
         /*border: 2px solid black;*/
         display: flex;
         flex-direction: column;
-        margin: 10px 10px;
+        margin: 10px 0px;
         padding: 10px;
         justify-content: center;
         align-items: center;
+        background-color: #f6f6f6;
+        border-radius: 10px;
     }
     /*#ser .icon_bar{
         display: flex;
@@ -308,7 +310,9 @@ body{
         box-shadow: 2px 2px 2px 2px #8080801a;
     }
     
-    
+    #ser .services_desc{
+        margin-left: 50px;
+    }
     /*#ser #wed_head{
        width: 100%;
     }
@@ -318,6 +322,7 @@ body{
             display: block;
         }
     }*/
+   
     /*Big Icon Photos*/
     #btn_male{
         background : url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.14&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ85q8U70rXK2BQzgVYLo0AazlwYrmA5yYatPEZPpF3FwFi_oR6MvLj-aacbZWMdzGce2_5RCpC3ENqoZSA_3Et4Ycn7adm-OKwh0XLvo0G-Ao0SvbBUac7LiU0&disp=emb&realattid=ii_krlo5xev13') no-repeat center center/cover;
@@ -379,6 +384,32 @@ body{
        font-family: 'Livvic', sans-serif;
        margin: 10px 0px;
    }
+   
+   #ser .variety_btn button{
+    width: 10rem;
+    height: 2rem;
+    margin: 5px 5px;
+    font-size: 1rem;
+    background-color: rgb(175, 166, 166);
+    color: white;
+    border-radius: 5px;
+    border:none;
+}
+#ser .variety_btn button:hover{
+    background-color: rgb(226, 222, 222);
+    color: rgb(51, 50, 50);
+
+}
+#ser .variety_btn{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+#ser .variety{
+    display: flex;
+    flex-direction: column;
+}
     /*Small Icon Photos*/
     /*Mens*/
     #m_1{
@@ -689,6 +720,7 @@ body{
     }
     .nav_icon{
         width: 70%;
+        padding: 5px 0;
     }
     .logo{
         top: 22px;
@@ -706,6 +738,10 @@ body{
    #ser .icon_btn{
        width: 100%;
    }
+   #ser .variety_btn{
+       display: grid;
+       grid-template-columns: repeat(2, auto);
+   }
 }
 
 hr{
@@ -714,8 +750,8 @@ hr{
     margin: 0px;
 }
   @media only screen and (max-width:1100px){
-    /*Section: Footer*/
    
+    /*Section: Footer*/
     #foot{
         display: flex;
         flex-direction: column;
@@ -724,35 +760,37 @@ hr{
     #foot .box{
         flex-direction: column;
         margin: 10px;
-        font-size: 1.3rem;
     }
-    #foot .box ul{
+    #foot .box .contact{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     #foot .box ul li{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         margin: 10px;
         padding: 1px;
     }
     #foot .box h1{
         display: block;
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     #foot .box a{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
-    #foot p1{
-        font-size: 1.2rem;
+    #foot p{
+        font-size: 1.6rem;
     }
-    #foot .icon_btn{
-        height: 40px;
-        width: 40px;
+    #footer p{
+        font-size: 1.5rem;
     }
-    #foot .icon_btn:hover{
-        width: 42px;
-        height: 42px;
+    #footer .icon_btn{
+        width: 55px;
+        height: 55px;
+    }
+    #footer .icon_btn:hover{
+        width: 57px;
+        height: 57px;
     }
     /*slide_show*/
     #slide_show{
@@ -777,42 +815,62 @@ hr{
     }
     #ser .icon_btn{
         grid-area: a;
-        width: 230px;
-        height: 230px;
-        margin-left: 150px;
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
     }
     #ser .book_text{
         grid-area: b;
         width: 80%;
-        margin-left: 150px;
+        margin-left: 100px;
     }
     #ser .services_desc{
         grid-area: c;
         margin-left: 150px;
         font-size: 1.5rem;
     }
-    #ser .book_text p{
-        font-size: 1.3rem;
-    }
+    
     #ser .book_btn{
         height: 4rem;
-        font-size: 1.7rem;
+        width: 20rem;
+        font-size: 2rem;
         font-family: 'Inder', sans-serif;
         
     }
     #ser .book_text p{
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    #ser .variety{
+        grid-area: v;
     }
     #ser .icon_text{
         display: grid;
         grid-template-areas: "a b"
-                             "c c";
-        grid-template-columns: 300px 1fr;
+                             "v v";
+        grid-template-columns: 30% 60%;
     }
     #ser .services_desc{
         width: 70%;
         margin-top: 20px;
+        font-size: 2rem;
+        margin-left: 50px;
     } 
+    #ser .variety_btn button{
+        width: 14rem;
+        height: 3rem;
+        margin: 10px 0px;
+        font-size: 1.7rem;
+    }
+    #ser .variety_btn{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+    #ser .variety{
+        display: flex;
+        flex-direction: row;
+    }
     /*Top*/
     #top .medbtn{
         margin: 0px 30px;
