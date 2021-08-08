@@ -210,7 +210,7 @@ body{
 /*Services*/
 #services{
     /*    border: 2px solid brown;*/
-        background-color: #f1f1f1;
+        background-color: #e6e6e6;
         margin-top: 20px;
     }
     #ser{
@@ -305,6 +305,7 @@ body{
         border-radius: 10px;
         border: 1px white;
         box-shadow: 2px 2px 2px 2px #8080801a;
+        font-weight: bolder;
     }
     
     #ser .services_desc{
@@ -351,18 +352,24 @@ body{
         height: 30px;
         width: 170px;
         margin: 3px 0;
-        background-color: rgb(175, 166, 166);
         color: white;
         font-size: 1rem;
         border: none;
         border-radius: 5px;
     }
-    #ser .book_btn:hover{
-        background-color: rgb(226, 222, 222);
-        color: rgb(51, 50, 50);
-        
-    }
    
+    #ser .book_now_btn{
+        background-color: rgb(238, 29, 29);
+    }
+    #ser .book_now_btn:hover{
+        background-color: rgb(168, 12, 12);
+    }
+    #ser .cart_btn{
+        background-color: rgb(19, 170, 19);
+    }
+    #ser .cart_btn:hover{
+        background-color: green;
+    }
     #ser .icon_text p{
         display: block;
         margin: auto;
@@ -382,20 +389,18 @@ body{
        margin: 10px 0px;
    }
    
-   #ser .variety_btn button{
+   #ser .var_btn{
     width: 10rem;
     height: 2rem;
     margin: 5px 5px;
     font-size: 1rem;
-    background-color: rgb(175, 166, 166);
+    background-color: rgb(43, 140, 179);
     color: white;
     border-radius: 5px;
     border:none;
 }
-#ser .variety_btn button:hover{
-    background-color: rgb(226, 222, 222);
-    color: rgb(51, 50, 50);
-
+#ser .var_btn:hover{
+    background-color: rgb(16, 123, 165);
 }
 #ser .variety_btn{
     display: flex;
@@ -806,6 +811,9 @@ hr{
         height: 1700px;
     }*/
     /*Services*/
+    #services{
+        margin-top: 250px;
+    }
     #ser .icon{
         grid-template-columns: repeat(1, auto);
         width: 100%;
@@ -868,9 +876,19 @@ hr{
         display: flex;
         flex-direction: row;
     }
+    #ser .head-pri{
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
     /*Top*/
     #top .medbtn{
-        margin: 0px 30px;
+        margin: 10px 30px;
+    width: 700px;
+    height: 90px;
+    background-color: #535151;
+    background-image: none;
     }
-    
+    #top{
+        flex-direction: column;
+    }
 }
