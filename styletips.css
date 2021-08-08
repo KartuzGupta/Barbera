@@ -68,7 +68,7 @@ body{
     height: 100%;
     width: 100%;
     display: flex;
-    margin-left: 8.4%;
+    margin-left: 8.3%;
     padding-left: 1.3rem;
 }
 
@@ -176,7 +176,7 @@ body{
         margin: 2% 0.7%;
     }
 }
-/* Created by webdevpuneet.com */
+/*Slide show*/
 
 #slide_show{
     padding: 50px 0;
@@ -615,8 +615,8 @@ body{
 }
 #tip .tip_btn_design{
     border: none;
-    background-color: rgb(219, 219, 219);
-    color:rgb(80, 78, 78);
+    background-color: rgb(174 188 183);
+    color:rgb(255, 255, 255);
     opacity: 1;
     margin: 10px;
     height: 40px;
@@ -750,35 +750,37 @@ hr{
     #foot .box{
         flex-direction: column;
         margin: 10px;
-        font-size: 1.3rem;
     }
-    #foot .box ul{
+    #foot .box .contact{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     #foot .box ul li{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         margin: 10px;
         padding: 1px;
     }
     #foot .box h1{
         display: block;
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     #foot .box a{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
-    #foot p1{
-        font-size: 1.2rem;
+    #foot p{
+        font-size: 1.6rem;
     }
-    #foot .icon_btn{
-        height: 40px;
-        width: 40px;
+    #footer p{
+        font-size: 1.5rem;
     }
-    #foot .icon_btn:hover{
-        width: 42px;
-        height: 42px;
+    #footer .icon_btn{
+        width: 55px;
+        height: 55px;
+    }
+    #footer .icon_btn:hover{
+        width: 57px;
+        height: 57px;
     }
     /*slide_show*/
     #slide_show{
