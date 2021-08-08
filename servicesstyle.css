@@ -323,10 +323,10 @@ body{
    
     /*Big Icon Photos*/
     #btn_male{
-        background : url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.14&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ85q8U70rXK2BQzgVYLo0AazlwYrmA5yYatPEZPpF3FwFi_oR6MvLj-aacbZWMdzGce2_5RCpC3ENqoZSA_3Et4Ycn7adm-OKwh0XLvo0G-Ao0SvbBUac7LiU0&disp=emb&realattid=ii_krlo5xev13') no-repeat center center/cover;
+        background : url('services_img/12.jpg') no-repeat center center/cover;
     }
     #btn_female{
-        background : url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.15&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-f3BB1XqyOGALQKDizJkBXLNh9EEuUOxFM_51e_yy5z7Jy15roUC10ts5_vbnPsXjrE912olcx8ghkWZs_Cq6peRTzAUkTIW7zncwVNHM6Thbwro8HdS6qJxk&disp=emb&realattid=ii_krlo68b515') no-repeat center center/cover;
+        background : url('services_img/14.jpg') no-repeat center center/cover;
     }
     #btn_wedding{
         background: url('https://i0.wp.com/detechter.com/wp-content/uploads/2017/07/Hindu-Wedding-India.jpg?fit=886%2C535&ssl=1') no-repeat center center/cover;
@@ -415,7 +415,7 @@ body{
     /*Small Icon Photos*/
     /*Mens*/
     #m_1{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.7&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-EYEpRO9HNN9EknPF9Q-YLZldv22-bxxlQvcexPgG7Tbj5SJak5qWg_QxfMIcoFgB0yJ_NBB_h6XWrieFRMbx2wecvpW3-H_fmSXXV3ATlXqJLSm1oZF0TI3Y&disp=emb&realattid=ii_krlo50v26') no-repeat center center/cover;
+        background: url('services_img/6.jpg') no-repeat center center/cover;
     }
     #m_2{
         background: url('https://previews.123rf.com/images/kahovsky/kahovsky1803/kahovsky180300012/96989793-young-man-shaving-face-with-foam-vector-flat-cartoon-character-illustration-icon-design-isolated-on-.jpg') no-repeat center center/cover;
@@ -424,51 +424,54 @@ body{
         background: url('https://cdn1.iconfinder.com/data/icons/barber-services-in-line-style/32/man-hair-dyeing-512.png') no-repeat center center/cover;
     }
     #m_4{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.19&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8RaFcXV6Zn9yyhWUent_jTbTADI10aZV7dmPhOXH-W6PSMljlMNNzlKxxs2oIQ2lwWVZvMWbOkvEXS36du2SiModYZ1Z3BE-7uxrbHhadqo9f7N-kqK-qttT8&disp=emb&realattid=ii_krlo9lbt18') no-repeat center center/cover;
+        background: url('services_img/16.jpg') no-repeat center center/cover;
     }
     #m_5{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.10&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ9eZiGx4U8C4zpHnrY2QqbXn3ksWwU5LhBVCdp3a8H6XZYOnWkMGfODgNdJ2x-B3jsIc69pScbimCbqUoFVkJ4joxHC86soZcBJ6ycYupVPSN42P0VdsV-_SBA&disp=emb&realattid=ii_krlo5e4j9') no-repeat center center/cover;
+        background: url('services_img/9.jfif') no-repeat center center/cover;
+    }
+    #m_6{
+        background: url('services_img/7.jpg') no-repeat center center/cover;
     }
     /*Female*/
     #fm_1{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.9&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ90UWLuCF62RLf9JURcI93iR2r9amq-MaCoioGPXP54CcjVdXxR1qNueo22eYM7WvSqOFcwYXyhNPrQSJpurXnk9VQ1ikmHf38yszuLTiAKOLydd6FVKWdjX9Y&disp=emb&realattid=ii_krlo59wh8') no-repeat center center/cover;
+        background: url('services_img/8.jfif') no-repeat center center/cover;
     }
     #fm_2{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.11&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_vidDkxnMuDQcgT8A26Q7Ax11kK8s4MqP9M5hzDgaR1SWtWUFXdxGjJ7OQStg-VHDh9kuNYZbxKz0LCoQvwZLCoTsGAEZ1mrUasHUlfTqbfkbVs9GDYk0iJVo&disp=emb&realattid=ii_krlo5hkw10') no-repeat center center/cover;
+        background: url('services_img/17.jpg') no-repeat center center/cover;
     }
     #fm_3{
         background: url('https://www.crushpixel.com/big-static17/preview4/hair-colouring-rgb-color-icon-2547377.jpg') no-repeat center center/cover;
     }
     #fm_4{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.13&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ96-AsOsKvu0slvtumB3b-cbAS83qfTHaxCMWkI7nSYB1oWRcfsAaVAqJVSIvCQ9irUVlPVTzMsOm5xP-BzyMdGLXwuTLCuIB2sYcnFtwgqoHVmU626UWdK97s&disp=emb&realattid=ii_krlo5t8g12') no-repeat center center/cover;
+        background: url('services_img/11.jpg') no-repeat center center/cover;
     }
     #fm_5{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.16&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_2pTvfAo7a7SC5gCqD879dG42Ka731zxhaY1Q_91ooqD96mnDXd3nOZ4HY0_80abqPI7Pl35myLX2r2kFRAMn4Kfm31yz0FAqNFE2yrAbWzFJCe16-2feBTqM&disp=emb&realattid=ii_krlo628014') no-repeat center center/cover;
+        background: url('services_img/13.png') no-repeat center center/cover;
     }
     #fm_6{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.17&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ9Ry6PGGe559qzmeH5gTdNzWlKmanbNJutR5_RSIHl2bqlicSwAkS07PqzVPIzzYRiPmKxVOErFmjPu3BM2xAA1EXVVL4Jysb1_3TAl8ZEsM87vlOA44FnZz08&disp=emb&realattid=ii_krlo6q1t16') no-repeat center center/cover;
+        background: url('services_img/15.jfif') no-repeat center center/cover;
     }
     #fm_7{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.2&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-Ad1_-MAn4_22c3ZFHx5JET3GBZ0MiubyLjVvekv8b1j1psokdFss19bT-EWFCNj1npMERS3UCmpU111jodOu_8LW9Ahl0yLYTyKFqgTPmp2j2eAE2bJu96KU&disp=emb&realattid=ii_krlo43c11') no-repeat center center/cover;
+        background: url("services_img/1.jpg") no-repeat center center/cover;
     }
     #fm_8{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.12&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-K-MFYwzrQAA3gMFgs4wiG6io14xNjQT5cLceOA4erWKOsG4hqsAXq_zhE9tC2kXbtCMMSTEshkWUQ_lhTUw_AX8xhAg4m6-TN7ldUAUBrDdtxulGU8u0DfMA&disp=emb&realattid=ii_krlo5prl11') no-repeat center center/cover;
+        background: url("services_img/10.jpg") no-repeat center center/cover;
     }
     /*WEDDING*/
     #wed_1{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.4&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_CeKdoA0S_KUIAzwAhJQag2bDuRAQv-kvJX9oP7yqLTUnI7U8jwz67zdxVWVQhF5PwiaKdmbwOTpVpy4E6vScR8chSIHBykdLUUCXOFpTsVdnb8fz3lvAnnxU&disp=emb&realattid=ii_krlo4e793') no-repeat center center/cover;
+        background: url('services_img/3.jpg') no-repeat center center/cover;
         background-size: contain;
         background-color: #dcb9bf;
     }
     #wed_2{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.1&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_SjrsZlGcg47kcls8Dk9a3rLZMz3oj7A6AJywS2I8PD7DWAKBJt3G77pfKRQm7xDeQDjNFvmxKMnNrK9jsTcsNnnkBBId-elWObbCW6axpIC17_mePcJTpeRo&disp=emb&realattid=ii_krlo3zfl0') no-repeat center center/cover;
+        background: url('services_img/18.jpg') no-repeat center center/cover;
         background-size: contain;
     }
     #wed_3{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.3&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ9cRMpSMp_A-8rhE4OJsHrVgpao4qB8vZQ3lzlime9sSLVuWKMH4YogfUNZcblQwTlPfr96aA5Ht1EuVNBqpwOlvNykw4iV73HOzXKja_-AjfWLOIWh-hTgQDI&disp=emb&realattid=ii_krlo47ml2') no-repeat center center/cover;
+        background: url('services_img/2.jpg') no-repeat center center/cover;
     }
     #wed_4{
-        background: url('https://mail.google.com/mail/u/0?ui=2&ik=3a4aca73e4&attid=0.16&permmsgid=msg-f:1706436801925071090&th=17ae7b3af265c0f2&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_2pTvfAo7a7SC5gCqD879dG42Ka731zxhaY1Q_91ooqD96mnDXd3nOZ4HY0_80abqPI7Pl35myLX2r2kFRAMn4Kfm31yz0FAqNFE2yrAbWzFJCe16-2feBTqM&disp=emb&realattid=ii_krlo628014') no-repeat center center/cover;
+        background: url('services_img/13.png') no-repeat center center/cover;
     }
 /*Section: Footer*/
 #footer{
