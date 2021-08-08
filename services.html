@@ -176,8 +176,8 @@
             </div>
 
             <div class="icon_text">
-            <button class="icon_btn" id="m_5"></button>
-            <div class="book_text">
+                <button class="icon_btn" id="m_5"></button>
+                <div class="book_text">
                 <p>HEAD MASSAGE</p>
                 <p id="m_5_price">Price1</p>
                 <button class="book_btn cart_btn">Add to Cart</button>
@@ -191,8 +191,26 @@
                 <div class="services_desc">
                     <p id="m_5_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iure reprehenderit laboriosam sint laborum saepe nostrum ratione vero ullam aut veniam minus dignissimos accusamus incidunt soluta, quis velit asperiores culpa!</p>
                 </div>
+                </div>
             </div>
-            </div>
+
+            <div class="icon_text">
+                <button class="icon_btn" id="m_6"></button><div class="book_text">
+                    <p>BLEACH</p>
+                    <p id="m_6_price">Price1</p>
+                    <button class="book_btn cart_btn">Add to Cart</button>
+                    <button class="book_btn book_now_btn">Book Now</button>
+                    </div>
+                    <div class="variety">
+                        <div class="variety_btn">
+                            <button class="var_btn" onclick="m_6_disp1()">Var 1 @ Price</button>
+                            <button class="var_btn" onclick="m_6_disp2()">var 2 @ Price</button>
+                        </div>
+                    <div class="services_desc">
+                        <p id="m_6_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iure reprehenderit laboriosam sint laborum saepe nostrum ratione vero ullam aut veniam minus dignissimos accusamus incidunt soluta, quis velit asperiores culpa!</p>
+                    </div>
+                </div>
+                </div>
 
             </div>
         </div>
@@ -613,6 +631,19 @@
     function m_5_disp2() {
         var x = document.getElementById("m_5_price");
         var y = document.getElementById("m_5_desc");
+        x.innerHTML = "Price2";
+        y.innerHTML =  "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iure reprehenderit laboriosam sint laborum saepe nostrum ratione vero ullam aut veniam minus dignissimos accusamus incidunt soluta, quis velit asperiores culpa!";     
+    }
+    
+    function m_6_disp1() {
+        var x = document.getElementById("m_6_price");
+        var y = document.getElementById("m_6_desc");
+        x.innerHTML = "Price1";
+        y.innerHTML =  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iure reprehenderit laboriosam sint laborum saepe nostrum ratione vero ullam aut veniam minus dignissimos accusamus incidunt soluta, quis velit asperiores culpa!";     
+    }
+    function m_6_disp2() {
+        var x = document.getElementById("m_6_price");
+        var y = document.getElementById("m_6_desc");
         x.innerHTML = "Price2";
         y.innerHTML =  "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iure reprehenderit laboriosam sint laborum saepe nostrum ratione vero ullam aut veniam minus dignissimos accusamus incidunt soluta, quis velit asperiores culpa!";     
     }
