@@ -1102,7 +1102,7 @@ body{
     height: 500px;
 }
 /*Gallery*/
-#gallery{
+/*#gallery{
     background-color: #827d7d;
     display: flex;
     flex-direction: row;
@@ -1125,7 +1125,7 @@ body{
 
 #gallery {
     background:#827d7d;
-           /*-webkit-perspective:1000px;*/
+           -webkit-perspective:1000px;
            overflow:hidden;
 
 cursor: url(https://dl.dropboxusercontent.com/u/50037593/ElasticSlider/images/cur.png), auto;
@@ -1150,11 +1150,9 @@ cursor: url(https://dl.dropboxusercontent.com/u/50037593/ElasticSlider/images/cu
 
        perspective:1000px;
        transition:ease-in-out .2s;
-             /*-webkit-transform:rotateX(45deg);
-             -webkit-transform-style:preserve-3d;
-                 position:absolute;*/
+             
 }
-/*.slider:active{ -webkit-transform:rotateZ(10deg);}*/
+
 
 
 #gallery .slide img { text-align:center;width:100%; height:100%; -webkit-user-drag:none;user-drag:none;-moz-user-drag:none; border-radius:2px; }
@@ -1174,7 +1172,7 @@ background:#fcfcfc;
               transform-style:preserve-3d;
   -moz-transform-style:preserve-3d;
              text-align:center;
-             /*overflow:hidden;*/
+             
              border:12px white solid;
              box-sizing:border-box;
              border-bottom:55px white solid;
@@ -1188,7 +1186,7 @@ background:#fcfcfc;
    -moz-transition: cubic-bezier(0,1.95,.49,.73) .4s ;
       transition: cubic-bezier(0,1.95,.49,.73) .4s ;
 }
-
+*/
 /* Section: App*/
 #app{
     display: flex;
@@ -1827,4 +1825,30 @@ hr{
   height: 50px;
   width: 50px;
   z-index: 100;
+}
+/*Gallery*/
+.marq{
+    display: inline !important;
+    width: 300px;
+    height:300px;
+  }
+/*Mobile view for Why barbera*/
+@media only screen and (max-width:1000px) {
+    #chooseus{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+    }
+    #choose::before{
+        height: 1300px;
+    }
+    #chooseus .box h1{
+        font-size: 2.5rem;
+    }
+    #chooseus .box p{
+        font-size: 2rem;
+    }
+    #chooseus .box{
+        width: 80%;
+    }
 }
