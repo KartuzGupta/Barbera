@@ -258,10 +258,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     display: block;
     margin:auto;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
     font-size: 2.3rem;
     color: #2B2B2B;
+   
 }
 #offer{
     /*border: 2px solid red;*/
@@ -283,7 +284,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 500px;
+    height: 450px;
     border-radius: 15px;
     background-color: none;
     margin-right: 10px;
@@ -315,7 +316,7 @@ body{
     /*border: 2px solid black;*/
     display: block;
     margin: auto;
-    height: 500px;
+    height: 450px;
     width: 300px;
     border-radius: 15px;
     background-color: #DDDDDD;
@@ -371,6 +372,10 @@ body{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 
+}
+#offers .box1 .head-sec{
+    margin-top: 10px;
+    font-weight: bolder;
 }
 /*Section: Why Choose Us*/
 
@@ -1549,17 +1554,17 @@ hr{
 
     #offer .box1{
         width: 285px;
-        height: 530px;
+        height: 450px;
     }
     #offer .box2{
         width: 285px;
     }
     #offer  .upper{
         margin: 5px;
-        height: 530px;
+        height: 450px;
     }
     #offer .box{
-        height: 530px;
+        height: 450px;
     }
     /*section: Download The App*/
     #app::before{
