@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada&family=Livvic:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada&family=Inder&family=Livvic:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada&family=Inder&family=Livvic:wght@300&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+/*CSS Reset*/
+*{
+    /*box-sizing: border-box;*/
+    margin: 0px;
+    padding: 0px;
+    /*font-family: 'Bree Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Andada', serif;
+    font-family: 'Inder', sans-serif;
+    font-family: 'Livvic', sans-serif;
+    font-family: 'Lobster Two', cursive;*/
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #a3a3a347;
+}
+
+/*Slide show*/
+
+#slide_show{
+    padding: 50px 0;
+    margin-top: 20px;
+    padding-bottom: 0px;
+  }
+  #slide_show .container{
+
+  }
+  #slide_show button{
+      border: none;
+  }
+
+  #slide_show .container {
+    padding: 10px 15px;
+  }
+  #slide_show .skyblue {
+      height: 400px;
+      background-color: #747777;
+  }
+
+  #slide_show .carousel-indicators {
+      bottom: 0;
+  }
+  #slide_show .carousel-control.right,
+  #slide_show .carousel-control.left {
+      background-image: none;
+  }
+  #slide_show .carousel-item {
+      min-height: 350px;
+      height: 100%;
+      width:100%;
+  }
+  #slide_show .carousel-caption h3,
+  #slide_show .carousel .icon-container,
+  #slide_show .carousel-caption button {
+      background-color: rgb(126, 136, 141);
+  }
+  #slide_show .carousel-caption h3 {
+      padding: .5em;
+  }
+  #slide_show .carousel .icon-container {
+      display: inline-block;
+      font-size: 25px;
+      line-height: 25px;
+      padding: 1em;
+      text-align: center;
+      border-radius: 50%;
+  }
+  #slide_show .carousel-caption button {
+      border-color: #00bfff;
+      margin-top: 1em;
+  }
+  #slide_show button:hover{
+    background-color: rgb(216, 211, 211);
+    color: rgb(126, 136, 141);
+}
+#slide_show .carousel-caption{
+    position: absolute;
+    top: 70px;
+}
+  /* Animation delays */
+  #slide_show .carousel-caption h3:first-child {
+      animation-delay: 1s;
+  }
+  #slide_show .carousel-caption h3:nth-child(2) {
+      animation-delay: 2s;
+  }
+  #slide_show .carousel-caption button {
+      animation-delay: 3s;
+  }
+
+  #slide_show h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #slide_show .p {
+    padding-top: 125px;
+    text-align: center;
+  }
+
+ #slide_show .p a {
+    text-decoration: underline;
+  }
+/*Utility Classes*/
+
+.head-pri{
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.heading_box{
+    display: block;
+    margin: 5px auto;
+    width: 75%;
+    padding-top: 0px;
+}
+/*.btn{
+    padding: 15px 15px;
+    margin: 10px;
+    border: 2px white;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 7px;
+    color: #614b4b;
+
+}
+.btn:hover{
+    background-color: grey;
+    color: white;
+}*/
+.head-sec{
+    display: block;
+    margin: auto;
+    font-size: 2rem;
+    padding: 10px;
+}
+/*Toogle Hide and Show*/
+#myDIV{
+  display: none;
+  width: 500px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+#myDIV1{
+    display: none;
+    width: 500px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  #myDIV2{
+    display: none;
+    width: 500px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  #myDIV3{
+    display: none;
+    width: 500px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  #myDIV4{
+    display: none;
+    width: 500px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+
+
+
+.hr_line{
+   background-color: white;
+    opacity: 1;
+    margin: 0px;
+}
+/*Tips and Tricks*/
+
+#tip{
+    display: flex;
+}
+#tip .tip_button{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-top: 60px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Andada', serif;
+    font-family: 'Inder', sans-serif;
+
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Inder', sans-serif;
+}
+#tip .tip_btn_design{
+    border: none;
+    background-color: rgb(174 188 183);
+    color:rgb(255, 255, 255);
+    opacity: 1;
+    margin: 10px;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+#tip .tip_btn_design:hover{
+    background-color:rgb(241, 235, 235);
+    color:rgb(36, 36, 36);
+    opacity: 1;
+}
+#tip #elaborate{
+    font-size: 1.1rem;
+    margin: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 100%;
+    width: 60%;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    padding: 50px;
+    font-family: 'Livvic', sans-serif;
+}
+
+
+hr{
+    color: white;
+    opacity: 1;
+    margin: 0px;
+}
+
+  @media only screen and (max-width:1100px){
+    
+    /*slide_show*/
+    #slide_show{
+        margin-top: 50px;
+    }
+    /*tips and tricks*/
+    /*#offer{
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        grid-gap: 50px;
+        margin: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    #offers{
+        height: 1700px;
+    }*/
+}
+
+/*Tips and Tricks*/
+@media only screen and (max-width:1000px){
+
+    #tip{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1100px;
+    }
+    #tip .tip_button{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-gap: 20px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    #tip .tip_btn_design{
+        width: 400px;
+        height: 50px;
+        display: block;
+        margin: auto;
+        font-size: 2rem;
+    }
+    #tip #elaborate{
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        font-size: 2rem;
+    }
+
+}
