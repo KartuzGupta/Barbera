@@ -13,6 +13,7 @@
     left: 10px;
     border-radius: 50px;
     margin-left: 5%;
+    z-index: 30;
 }
 .logo img{
     width: 50px;
@@ -23,7 +24,7 @@
     position: fixed;
     top:2px;
     left:15px;
-    z-index: 100;
+    z-index: 30;
 }
 .navbar{
     display: flex;
@@ -35,6 +36,7 @@
     height: 70px;
     width: 100%;
     border: none;
+    z-index: 30;
 }
 .navbar hr{
     display: none;
@@ -68,7 +70,7 @@
     background: black;
     background-size: cover;
     background-blend-mode: darken;
-    z-index: 3;
+    z-index: 20;
 }
 .burger{
     display: none;
@@ -124,6 +126,7 @@
     color: white;
 }
 .current{
+    text-decoration :underline;
     text-underline-position: under;
 }
 #home_icon{
