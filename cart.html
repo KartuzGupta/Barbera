@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Cart: Barbera</title>
+    <!-- <link id="changer" href="style_cart.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style_common.css">
+</head>
+<body>
+    <!--Back To top-->
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+    </button>
+    <section id="black_top">
+            
+    </section>
+       <a href="home.html"><img src="https://barbera.netlify.app/nikita.jpeg" alt="logo" class="logo"></a>
+        <!--Navigation Bar-->
+        <nav class="navbar background h-nav-resp" id="mySidenav">
+            <ul class="nav-list v-class-resp">
+                <!--<div class="logo"><img src="https://barbera.netlify.app/nikita.jpeg" alt="logo"></div>-->
+                <div class="nav_icon">
+               <!-- <img src="https://us.123rf.com/450wm/fokaspokas/fokaspokas1804/fokaspokas180400063/98532451-a-house-icon-on-white-icon-on-black-background-.jpg?ver=6" alt="Home" id="home_icon">-->
+                <li><a href="home.html">Home</a></li>
+                </div>
+                <hr>
+                <div class="nav_icon">
+                <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfglX2FUbxIF11BZiecgectkGhkjPsr4WFu2lUPEtYTIXt-Iq6uxultTxlyUZfl-SUHPY&usqp=CAU" alt="Services" id="services_icon">-->
+                <li><a href="services.html">Services</a></li>
+                </div>
+                <hr>
+                <div class="nav_icon">
+                  <!-- <img src="https://i.pinimg.com/originals/db/9c/66/db9c669ece4c0168bc0fc2076960a3b8.png" alt="Tips" id="tips_icon" style="margin-right: 4px;"> -->
+                  <li><a href="tips.html">Tips</a></li>
+                  </div>
+                  <hr>   
+                  <div class="nav_icon current">
+                    <!-- <img src="https://thumbs.dreamstime.com/b/shopping-icon-shopping-cart-icon-dark-background-simple-vector-icon-shopping-icon-shopping-cart-icon-dark-background-116659167.jpg" alt="Cart" id="cart_icon" style="margin-right: 4px;"> -->
+                    <li><a href="cart.html">Cart</a></li>
+                    </div>
+                    <hr>
+                <div class="nav_icon">
+                <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8sksWlhY2C3peMqclAzuHm4z0-_kv7IR7rQ&usqp=CAU" alt="AboutUs" id="about_icon">-->
+                <li><a href="about.html">About Us</a></li>
+                </div>
+                <hr>
+                <div class="nav_icon">
+                <!-- <img src="https://i.pinimg.com/originals/22/52/5e/22525e1af533b224bd2314e1126ead4f.jpg" alt="Contact" id="contact_icon">-->
+                <li><a href="contact.html">Contact Us</a></li>
+                </div>
+                <hr>
+    
+    
+                <!--<div class="nav_icon">
+                <img src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-gallery-icon-png-image_4316074.jpg" alt="Bookings">
+                <li><a href="#">Gallery</a></li>
+                </div>
+                <hr>-->
+                <div class="nav_icon" id="sign">
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xvPVwE-_sU3RrWJrI_88gIAysvHpFqaZaqmp22hCDwXFBRHqqRQQ0Mi17qR1JuBr1TQ&usqp=CAU" alt="SignIn" class="sign_icon"> -->
+                <li><a href="#">Sign Up</a></li>
+                </div>
+    
+            </ul>
+            <!--Side Option For small screens-->
+            <div class="burger" onclick="myFunction(this)">
+                <div class="line" id="bar1"></div>
+                <div class="line" id="bar2"></div>
+                <div class="line" id="bar3"></div>
+            </div>
+               <div class="nav_icon" id="login">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xvPVwE-_sU3RrWJrI_88gIAysvHpFqaZaqmp22hCDwXFBRHqqRQQ0Mi17qR1JuBr1TQ&usqp=CAU" alt="SignIn" class="sign_icon">
+                <li><a href="#">Sign Up</a></li>
+                </div>
+        </nav>
+    
+    
+    </section>
+    <br><br><br><br><br>
+<h3 id="emptyCart">
+</h3>
+
+
+<main>
+  <div class="basket" id="mainbasket">
+    <div id="carthead">
+      <div class="basket-module">
+        <label for="promo-code">Enter a promotional code</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <aside id="asidecheckout">
+    <div class="summary">
+      <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+      <div class="summary-subtotal">
+        <div class="subtotal-title">Subtotal</div>
+        <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+        <div class="summary-promo hide">
+          <div class="promo-title">Promotion</div>
+          <div class="promo-value final-value" id="basket-promo"></div>
+        </div>
+      </div>
+      <div class="summary-delivery">
+        <select name="delivery-collection" class="summary-delivery-selection">
+          <option value="0" selected="selected">Select Collection or Delivery</option>
+          <option value="collection">Collection</option>
+          <option value="first-class">Royal Mail 1st Class</option>
+          <option value="second-class">Royal Mail 2nd Class</option>
+          <option value="signed-for">Royal Mail Special Delivery</option>
+        </select>
+      </div>
+      <div class="summary-total">
+        <div class="total-title">Total</div>
+        <div class="total-value final-value" id="basket-total">130.00</div>
+      </div>
+      <div class="summary-checkout">
+        <!-- Button trigger modal -->
+
+
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="checkout-cta">Go to Secure
+          Checkout</button>
+      </div>
+    </div>
+  </aside>
+</main>
+<button id="clearCart" onclick="clearfunc()">Clear Cart</button>
+<a href="/servicesPage"> <button id="checkServices">Book Now</button></a>
+
+
+<script>
+  if (localStorage.length == 0) {
+    document.getElementById("emptyCart").innerText = "After you add sevices to your cart it will be shown here.";
+    document.getElementById("carthead").style.display = "none";
+    document.getElementById("asidecheckout").style.display = "none";
+    document.getElementById("clearCart").style.display = "none";
+
+  }
+  else {
+    document.getElementById("checkServices").style.display = "none";
+
+
+    for (let p = 0; p < localStorage.length; p++) {
+      if (localStorage.key(p) != "noeic") {
+
+
+
+        const fipar = document.createElement("div");
+        fipar.setAttribute("class", "basket-product");
+
+        fiparfich = document.createElement("div");
+        fiparfich.setAttribute("class", "item");
+        fiparfich.setAttribute("id", "serviceName");
+        const itemName = document.createTextNode(JSON.stringify(JSON.parse(localStorage[localStorage.key(p)]).name))
+        fiparfich.appendChild(itemName);
+        fipar.appendChild(fiparfich);
+
+        fiparsdch = document.createElement("div");
+        fiparsdch.setAttribute("class", "price");
+        const itemPrice = document.createTextNode(JSON.stringify(JSON.parse(localStorage[localStorage.key(p)]).price))
+        const itemPriceVar = JSON.parse(localStorage[localStorage.key(p)]).price;
+        console.log("Ye price variable se liya hai : " + itemPriceVar);
+        fiparsdch.appendChild(itemPrice);
+        fipar.appendChild(fiparsdch);
+
+        fiparthch = document.createElement("div");
+        fiparthch.setAttribute("class", "quantity");
+        const itemQuantity = JSON.stringify(JSON.parse(localStorage[localStorage.key(p)]).qty)
+        const itemQuantityVar = JSON.parse(localStorage[localStorage.key(p)]).qty;
+
+        fiparthchfich = document.createElement("input");
+        fiparthchfich.setAttribute("class", "quantity-field");
+        fiparthchfich.setAttribute("min", 1);
+        fiparthchfich.setAttribute("type", "number");
+        fiparthchfich.setAttribute("value", itemQuantity);
+
+        fiparthch.appendChild(fiparthchfich);
+        fipar.appendChild(fiparthch);
+
+
+        fiparfrch = document.createElement("div");
+        fiparfrch.setAttribute("class", "subtotal");
+
+        fiparfrch.innerText = (itemPriceVar * itemQuantityVar);
+        fipar.appendChild(fiparfrch);
+
+        console.log("Ye wala item quantity var" + itemQuantityVar);
+
+
+
+
+
+
+        fiparftch = document.createElement("div");
+        fiparftch.setAttribute("class", "remov");
+        fiparftchsdch = document.createElement("button");
+        fiparftchsdch.setAttribute("id", "removeItemCartBut");
+        fiparftchsdch.innerText = "Delete Item";
+        fiparftch.appendChild(fiparftchsdch);
+        fipar.appendChild(fiparftch);
+
+
+
+
+
+
+
+
+
+        document.getElementById("mainbasket").appendChild(fipar);
+
+      }
+
+
+      console.log(JSON.stringify(JSON.parse(localStorage[localStorage.key(p)]).name));
+
+      console.log(JSON.parse(localStorage[localStorage.key(p)]));
+    }
+
+
+  }
+  function clearfunc() {
+
+
+    localStorage.clear();
+    document.location.reload(true)
+  }
+
+
+</script>
+<!--Footer section-->
+<footer id="footer">
+    <div id="foot">
+        <div class="box">
+            <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">FAQ's</a></li>
+            </ul>
+           <!--<li><a href="#"></a></li>-->
+        </div>
+        <hr>
+        <div class="box">
+            <h1>Serving in:</h1>
+            <ul>
+                <li>Jaipur</li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="box">
+            <h1><a href="contact.html">Contact Us:</a></h1>
+            <ul class="contact">
+                <li>Phone Number: 9876452823</li>
+                <li><a href="#">Gmail: barbera@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <p>Follow Us</p>
+            <div class="icon_bar">
+                <button class="icon_btn" id="insta" onclick="window.open('https://www.instagram.com/barbera_online_salon/','_blank')"></button>
+                <button class="icon_btn" id="facebook" onclick="window.open('https://www.facebook.com/BarberaOnlineSalon/','_blank')"></button>
+                <button class="icon_btn" id="linkedin" onclick="window.open('https://www.linkedin.com/company/barbera2021/','_blank')"></button>
+               <!--
+                <button class="icon_btn" id="twitter"></button>
+                <button class="icon_btn" id="pintrest"></button>
+                <button class="icon_btn" id="youtube"></button>-->
+            </div>
+        </div>
+        <hr>
+    </div>
+     <p>&copy; Barbera 2021 </p>
+</footer>
+
+<script>
+
+
+
+//To change Burger icon to cross
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+//Navigation Bar for mobiles and table
+burger = document.querySelector('.burger')
+navbar = document.querySelector('.navbar')
+navList = document.querySelector('.nav-list')
+
+burger.addEventListener('click', ()=>{
+navList.classList.toggle('v-class-resp');
+navbar.classList.toggle('h-nav-resp');
+})
+
+
+</script>
+</body>
+</html>
