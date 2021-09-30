@@ -1,0 +1,147 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen"> 
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - swiper 2 - autoplay stop on hover</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/2.7.6/idangerous.swiper.css'>
+  
+<style>
+/* Demo Syles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.device {
+  width: 640px;
+  height: 300px;
+  padding: 30px 40px;
+  border-radius: 20px;
+  background: #111;
+  border: 3px solid white;
+  margin: 5px auto;
+  position: relative;
+  box-shadow: 0px 0px 5px #000;
+}
+.swiper-container {
+  height: 300px;
+  width: 640px;
+}
+.content-slide {
+  padding: 20px;
+  color: #fff;
+}
+.title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body >
+  <div class="device">
+	<a class="arrow-left" href="#"></a>
+	<a class="arrow-right" href="#"></a>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="content-slide">
+					<p class="title">Mouse enter on Device will STOP autoplay</p>
+					<p>You can put any HTML inside of slide with any layout, not only images, even another Swiper!</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="content-slide">
+					<p class="title">Mouse leave on Device will START autoplay</p>
+					<p>You can put any HTML inside of slide with any layout, not only images, even another Swiper!</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="content-slide">
+					<p class="title">Slide with HTML</p>
+					<p>You can put any HTML inside of slide with any layout, not only images, even another Swiper!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pagination"></div>
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/2.7.6/idangerous.swiper.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+      <script id="rendered-js" >
+var mySwiper = new Swiper('.swiper-container', {
+  pagination: '.pagination',
+  loop: true,
+  autoplay: 1000,
+  paginationClickable: true });
+
+$('.swiper-container').on('mouseenter', function (e) {
+  console.log('stop autoplay');
+  mySwiper.stopAutoplay();
+});
+$('.swiper-container').on('mouseleave', function (e) {
+  console.log('start autoplay');
+  mySwiper.startAutoplay();
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 

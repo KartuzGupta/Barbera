@@ -29,8 +29,29 @@ body{
 }
 
 
+/*Utility Classes*/
 
-/*Padmaja Code for animation*/
+.head-pri{
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.head-sec{
+    display: block;
+    margin: auto;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+
+hr{
+    color: white;
+    opacity: 1;
+    margin: 0px;
+}
+/* Code for animation*/
 
 #home img{
     height: 800px;
@@ -82,27 +103,54 @@ body{
 }
 /*Section Offers*/
 
+#offers::before{
+    content: "";
+    position: absolute;
+    background: url('https://videohive.img.customer.envatousercontent.com/files/0dbbe43f-385e-4fb3-98b2-68b7abcfefe8/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=44b2f3217189ce9d64087e52f6173f60')  no-repeat center center/cover;
+    z-index: -1;
+    height: 620px;
+    width: 100%;
+    filter: brightness(50%);
+    opacity: 95%;
+}
 #offers{
     display: flex;
-    flex-direction: column;
-    height: 750px;
-    background-color: #EFEFEF;
+    flex-direction: row;
+    height: 620px;
+    background-color: #ececec;
+    justify-content: center;
+    align-items: center;
    /* border: 1px solid blue;*/
 }
 .heading_box{
-    display: block;
-    margin: 5px auto;
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
     padding-top: 0px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    justify-content: center;
+    height: 80%;
+    margin-left: 7%;
+    /* background-color: rgb(0, 0, 0); */
+}
+.heading_box hr{
+    display: none;
+}
+.deal_head{
+    display: none;
+}
+.deal_img{
+    display: block;
 }
 #offers h1{
     font-family: 'Montserrat', sans-serif;
-    display: block;
+    display: none;
     margin:auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 2.5rem;
-    color: #2B2B2B;
+    color: #acacac;
     font-weight: bolder;
 }
 #offers .active{
@@ -124,19 +172,20 @@ body{
     font-size: 1rem;
     padding: 5px;
     margin: auto;
- /* border-radius: 10px;*/
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    background-color: #bebcbc;
+    border-radius: 10px;
+    background-color: #746f6f;
     width: 350px;
-    height: 100px;
-    color: black;
+    height: 30px;
+    color: rgb(245, 245, 245);
     font-family: 'Montserrat', sans-serif;
     font-family: 'Inder', sans-serif;
     border:none;
-
-
     /*border: 2px solid black;*/
+}
+.offer .btn_offers:hover{
+    background-color: white;
+    color: black;
+
 }
 
 .offer .box1{
@@ -170,7 +219,7 @@ body{
     font-weight: bolder;
 }
 .offer .head-sec{
-    padding-top: 35px;
+    padding-top: 0px;
 }
 .offer .box img{
     height: 100px;
@@ -181,14 +230,15 @@ body{
 .offer p{
     text-align: center;
     padding: 5px;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #614b4b;
     font-family: 'Andada', serif;
     font-family: 'Livvic', sans-serif;
     font-weight: bolder;
     display: block;
-    margin: auto;
-    width: 300px;
+     margin: auto; 
+    width: 500px;
+    margin-top: 0px;
 
 }
 
@@ -213,7 +263,58 @@ body{
     margin: 0px;
     padding: 0px;
 }
-
+/* Deals for you */
+.device {
+    width: 640px;
+    height: 500px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    /* background: #111; */
+    /* border: 3px solid white; */
+    margin: 5px auto;
+    position: relative;
+    /* box-shadow: 0px 0px 5px #000; */
+  }
+  .swiper-container {
+    height: 500px;
+    width: 640px;
+  }
+  .content-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    padding: 20px;
+    color: #fff;
+    height: 500px;
+  }
+  .title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .swiper-pagination-switch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #999;
+    box-shadow: 0px 1px 2px #555 inset;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+  .swiper-active-switch {
+    background: #fff;
+  }
+  .swiper-slide{
+      height: 500px;
+  }
 /*Section: Why Choose Us*/
 
 #choose::before{
@@ -296,6 +397,7 @@ body{
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
     color: #E8F0F2;
+    margin-top: 0px;
 }
 #choose .bigbtn{
     display: block;
@@ -663,28 +765,7 @@ body{
 
 
 
-/*Utility Classes*/
 
-.head-pri{
-    font-size: 3rem;
-    padding: 10px;
-    text-align: center;
-}
-
-
-.head-sec{
-    display: block;
-    margin: auto;
-    font-size: 2rem;
-    padding: 10px;
-}
-
-
-hr{
-    color: white;
-    opacity: 1;
-    margin: 0px;
-}
 @media only screen and (max-width:1100px){
 
     /*Section : Home*/
@@ -698,6 +779,7 @@ hr{
     /*section: Offers*/
 
     .offer h1{
+        display: block;
         font-size: 2.5rem;
     }
 
@@ -819,6 +901,19 @@ hr{
     margin: auto;
     height: 2px;
 }
+.elementor-counter-number{
+    font-size: 4.8rem;
+}
+.elementor-counter-number-suffix{
+    font-size:  4.5rem;
+}
+.elementor-counter-title{
+    font-size: 3rem;
+}
+.elementor-counter-number-wrapper{
+    text-align: center;
+
+}
 /* Downloads */
 #download .elementor-row{
     background-color: rgb(59, 57, 57);
@@ -856,10 +951,37 @@ hr{
 @media only screen and (max-width:1000px) {
     /* Offers */
     #offers {
-        height: 850px;
+        height: 750px;
+        flex-direction: column;
     }
     #offers .head-pri{
         font-size: 3rem;
+    }
+    #offers h1{
+        color: #2c0e0e;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    #offers .heading_box{
+        margin: 10px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        padding: 0px;
+        width: 500px;
+        height: 100px;
+    }
+    #offers .heading_box hr{
+        display: block;
+        width: 500px;
+        color: rgb(255, 255, 255);
+        margin: auto;
+    }
+    .deal_head{
+        display: block;
+    }
+    .deal_img{
+        display: none;
     }
     .offer .box{
         width: 400px;
