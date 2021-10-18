@@ -1,4 +1,4 @@
 # Barbera
-*Created using HTMl5, CSS3 and Java Script.
+* Created using HTML5, CSS3 and Java Script.
 
 
